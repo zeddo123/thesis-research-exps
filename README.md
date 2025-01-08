@@ -21,3 +21,7 @@ options:
 
 ```
 
+
+# Wandb
+The following [link](https://wandb.ai/s23998/Anomaly%20Detection?nw=nwusers23998) takes you to my own wandb project with
+all my tracked experiments. Each experiment can be reproduced by copying the command for each run.
