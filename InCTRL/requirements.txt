@@ -1,0 +1,12 @@
+numpy
+tqdm
+matplotlib
+opencv-python
+iopath
+scikit-learn
+scikit-image
+psutil
+fvcore
+ftfy
+regex
+wandb

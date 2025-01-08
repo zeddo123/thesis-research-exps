@@ -1,0 +1,28 @@
+program: sweep.py
+
+metric:
+  name: avg_roc_auc
+  goal: maximize
+
+method: random
+parameters:
+  dataset_name:
+    value: chexpert
+
+  dataset_path:
+    value: ../datasets/chexpert_mvtec
+
+  model_type:
+    value: ViT-B-16
+
+  model_path:
+    values: [../weights/checkpoints/8/checkpoint.pyth, ../weights/checkpoints/4/checkpoint.pyth, ../weights/checkpoints/2/checkpoint.pyth ,trained_on_visa/trained_on_visa/2/checkpoint.pyth, trained_on_visa/trained_on_visa/4/checkpoint.pyth, trained_on_visa/trained_on_visa/8/checkpoint.pyth]
+
+  fewshots:
+    min: 1
+    max: 30
+
+command:
+- venv/bin/python
+- ${program}
+- ${args}
