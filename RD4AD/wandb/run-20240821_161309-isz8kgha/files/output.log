@@ -1,0 +1,377 @@
+
+Training T-S model on carpet
+epoch [1/50], loss:1.4273
+epoch [2/50], loss:0.8586
+epoch [3/50], loss:0.7319
+epoch [4/50], loss:0.6684
+epoch [5/50], loss:0.6188
+epoch [6/50], loss:0.5804
+epoch [7/50], loss:0.5509
+epoch [8/50], loss:0.5279
+epoch [9/50], loss:0.5001
+epoch [10/50], loss:0.4729
+Pixel Auroc:0.993, Sample Auroc1.000, Pixel Aupro0.978
+epoch [11/50], loss:0.4470
+epoch [12/50], loss:0.4284
+epoch [13/50], loss:0.4149
+epoch [14/50], loss:0.4071
+epoch [15/50], loss:0.3988
+epoch [16/50], loss:0.3919
+epoch [17/50], loss:0.3829
+epoch [18/50], loss:0.3766
+epoch [19/50], loss:0.3699
+epoch [20/50], loss:0.3653
+Pixel Auroc:0.993, Sample Auroc0.999, Pixel Aupro0.978
+epoch [21/50], loss:0.3581
+epoch [22/50], loss:0.3523
+epoch [23/50], loss:0.3499
+epoch [24/50], loss:0.3491
+epoch [25/50], loss:0.3444
+epoch [26/50], loss:0.3393
+epoch [27/50], loss:0.3374
+epoch [28/50], loss:0.3322
+epoch [29/50], loss:0.3273
+epoch [30/50], loss:0.3255
+Pixel Auroc:0.992, Sample Auroc0.994, Pixel Aupro0.976
+epoch [31/50], loss:0.3229
+epoch [32/50], loss:0.3223
+epoch [33/50], loss:0.3184
+epoch [34/50], loss:0.3132
+epoch [35/50], loss:0.3116
+epoch [36/50], loss:0.3077
+epoch [37/50], loss:0.3067
+epoch [38/50], loss:0.3045
+epoch [39/50], loss:0.2991
+epoch [40/50], loss:0.2957
+Pixel Auroc:0.991, Sample Auroc0.994, Pixel Aupro0.975
+epoch [41/50], loss:0.2944
+epoch [42/50], loss:0.2920
+epoch [43/50], loss:0.2890
+epoch [44/50], loss:0.2870
+epoch [45/50], loss:0.2820
+epoch [46/50], loss:0.2824
+epoch [47/50], loss:0.2768
+epoch [48/50], loss:0.2785
+epoch [49/50], loss:0.2756
+epoch [50/50], loss:0.2714
+Pixel Auroc:0.991, Sample Auroc0.994, Pixel Aupro0.975
+Training T-S model on bottle
+epoch [1/50], loss:1.5546
+epoch [2/50], loss:0.8978
+epoch [3/50], loss:0.6813
+epoch [4/50], loss:0.5568
+epoch [5/50], loss:0.4758
+epoch [6/50], loss:0.4223
+epoch [7/50], loss:0.3481
+epoch [8/50], loss:0.3127
+epoch [9/50], loss:0.2727
+epoch [10/50], loss:0.2450
+Pixel Auroc:0.983, Sample Auroc0.996, Pixel Aupro0.957
+epoch [11/50], loss:0.2313
+epoch [12/50], loss:0.2171
+epoch [13/50], loss:0.1954
+epoch [14/50], loss:0.1975
+epoch [15/50], loss:0.1886
+epoch [16/50], loss:0.1701
+epoch [17/50], loss:0.1712
+epoch [18/50], loss:0.1561
+epoch [19/50], loss:0.1611
+epoch [20/50], loss:0.1463
+Pixel Auroc:0.986, Sample Auroc0.999, Pixel Aupro0.963
+epoch [21/50], loss:0.1480
+epoch [22/50], loss:0.1379
+epoch [23/50], loss:0.1389
+epoch [24/50], loss:0.1368
+epoch [25/50], loss:0.1300
+epoch [26/50], loss:0.1279
+epoch [27/50], loss:0.1314
+epoch [28/50], loss:0.1404
+epoch [29/50], loss:0.1240
+epoch [30/50], loss:0.1196
+Pixel Auroc:0.987, Sample Auroc1.000, Pixel Aupro0.966
+epoch [31/50], loss:0.1155
+epoch [32/50], loss:0.1469
+epoch [33/50], loss:0.1192
+epoch [34/50], loss:0.1132
+epoch [35/50], loss:0.1188
+epoch [36/50], loss:0.1118
+epoch [37/50], loss:0.1089
+epoch [38/50], loss:0.1101
+epoch [39/50], loss:0.1066
+epoch [40/50], loss:0.1089
+Pixel Auroc:0.987, Sample Auroc1.000, Pixel Aupro0.967
+epoch [41/50], loss:0.1071
+epoch [42/50], loss:0.1078
+epoch [43/50], loss:0.1029
+epoch [44/50], loss:0.1042
+epoch [45/50], loss:0.1046
+epoch [46/50], loss:0.1037
+epoch [47/50], loss:0.0983
+epoch [48/50], loss:0.0987
+epoch [49/50], loss:0.1038
+epoch [50/50], loss:0.1016
+Pixel Auroc:0.987, Sample Auroc1.000, Pixel Aupro0.966
+Training T-S model on hazelnut
+epoch [1/50], loss:1.2686
+epoch [2/50], loss:0.7715
+epoch [3/50], loss:0.6451
+epoch [4/50], loss:0.5708
+epoch [5/50], loss:0.5257
+epoch [6/50], loss:0.4820
+epoch [7/50], loss:0.4499
+epoch [8/50], loss:0.4190
+epoch [9/50], loss:0.4099
+epoch [10/50], loss:0.3798
+Pixel Auroc:0.991, Sample Auroc1.000, Pixel Aupro0.959
+epoch [11/50], loss:0.3709
+epoch [12/50], loss:0.3502
+epoch [13/50], loss:0.3433
+epoch [14/50], loss:0.3221
+epoch [15/50], loss:0.3152
+epoch [16/50], loss:0.3070
+epoch [17/50], loss:0.3024
+epoch [18/50], loss:0.2907
+epoch [19/50], loss:0.2858
+epoch [20/50], loss:0.2818
+Pixel Auroc:0.991, Sample Auroc1.000, Pixel Aupro0.961
+epoch [21/50], loss:0.2746
+epoch [22/50], loss:0.2704
+epoch [23/50], loss:0.2633
+epoch [24/50], loss:0.2646
+epoch [25/50], loss:0.2554
+epoch [26/50], loss:0.2509
+epoch [27/50], loss:0.2484
+epoch [28/50], loss:0.2441
+epoch [29/50], loss:0.2394
+epoch [30/50], loss:0.2370
+Pixel Auroc:0.991, Sample Auroc1.000, Pixel Aupro0.958
+epoch [31/50], loss:0.2311
+epoch [32/50], loss:0.2297
+epoch [33/50], loss:0.2235
+epoch [34/50], loss:0.2225
+epoch [35/50], loss:0.2178
+epoch [36/50], loss:0.2132
+epoch [37/50], loss:0.2108
+epoch [38/50], loss:0.2069
+epoch [39/50], loss:0.2029
+epoch [40/50], loss:0.2010
+Pixel Auroc:0.990, Sample Auroc1.000, Pixel Aupro0.959
+epoch [41/50], loss:0.2006
+epoch [42/50], loss:0.1954
+epoch [43/50], loss:0.1934
+epoch [44/50], loss:0.1911
+epoch [45/50], loss:0.1868
+epoch [46/50], loss:0.1866
+epoch [47/50], loss:0.1844
+epoch [48/50], loss:0.1806
+epoch [49/50], loss:0.1777
+epoch [50/50], loss:0.1760
+Pixel Auroc:0.991, Sample Auroc1.000, Pixel Aupro0.962
+Training T-S model on leather
+epoch [1/50], loss:1.4059
+epoch [2/50], loss:0.8547
+epoch [3/50], loss:0.7367
+epoch [4/50], loss:0.6704
+epoch [5/50], loss:0.6194
+epoch [6/50], loss:0.5765
+epoch [7/50], loss:0.5383
+epoch [8/50], loss:0.5062
+epoch [9/50], loss:0.4744
+epoch [10/50], loss:0.4377
+Pixel Auroc:0.994, Sample Auroc1.000, Pixel Aupro0.992
+epoch [11/50], loss:0.4236
+epoch [12/50], loss:0.4072
+epoch [13/50], loss:0.3961
+epoch [14/50], loss:0.3859
+epoch [15/50], loss:0.3811
+epoch [16/50], loss:0.3745
+epoch [17/50], loss:0.3667
+epoch [18/50], loss:0.3603
+epoch [19/50], loss:0.3580
+epoch [20/50], loss:0.3537
+Pixel Auroc:0.995, Sample Auroc1.000, Pixel Aupro0.992
+epoch [21/50], loss:0.3497
+epoch [22/50], loss:0.3440
+epoch [23/50], loss:0.3413
+epoch [24/50], loss:0.3384
+epoch [25/50], loss:0.3357
+epoch [26/50], loss:0.3354
+epoch [27/50], loss:0.3340
+epoch [28/50], loss:0.3299
+epoch [29/50], loss:0.3286
+epoch [30/50], loss:0.3279
+Pixel Auroc:0.994, Sample Auroc1.000, Pixel Aupro0.992
+epoch [31/50], loss:0.3322
+epoch [32/50], loss:0.3268
+epoch [33/50], loss:0.3286
+epoch [34/50], loss:0.3213
+epoch [35/50], loss:0.3193
+epoch [36/50], loss:0.3207
+epoch [37/50], loss:0.3138
+epoch [38/50], loss:0.3086
+epoch [39/50], loss:0.3066
+epoch [40/50], loss:0.3010
+Pixel Auroc:0.994, Sample Auroc1.000, Pixel Aupro0.992
+epoch [41/50], loss:0.3035
+epoch [42/50], loss:0.2974
+epoch [43/50], loss:0.2901
+epoch [44/50], loss:0.2894
+epoch [45/50], loss:0.2852
+epoch [46/50], loss:0.2865
+epoch [47/50], loss:0.2793
+epoch [48/50], loss:0.2767
+epoch [49/50], loss:0.2773
+epoch [50/50], loss:0.2706
+Pixel Auroc:0.994, Sample Auroc1.000, Pixel Aupro0.992
+Training T-S model on cable
+epoch [1/50], loss:1.5674
+epoch [2/50], loss:1.0402
+epoch [3/50], loss:0.9020
+epoch [4/50], loss:0.8149
+epoch [5/50], loss:0.7454
+epoch [6/50], loss:0.7029
+epoch [7/50], loss:0.6519
+epoch [8/50], loss:0.6040
+epoch [9/50], loss:0.5942
+epoch [10/50], loss:0.5710
+Pixel Auroc:0.972, Sample Auroc0.930, Pixel Aupro0.91
+epoch [11/50], loss:0.5440
+epoch [12/50], loss:0.5302
+epoch [13/50], loss:0.5083
+epoch [14/50], loss:0.5078
+epoch [15/50], loss:0.4807
+epoch [16/50], loss:0.4850
+epoch [17/50], loss:0.4864
+epoch [18/50], loss:0.4532
+epoch [19/50], loss:0.4527
+epoch [20/50], loss:0.4485
+Pixel Auroc:0.974, Sample Auroc0.936, Pixel Aupro0.92
+epoch [21/50], loss:0.4351
+epoch [22/50], loss:0.4305
+epoch [23/50], loss:0.4286
+epoch [24/50], loss:0.4207
+epoch [25/50], loss:0.4119
+epoch [26/50], loss:0.4065
+epoch [27/50], loss:0.4038
+epoch [28/50], loss:0.3978
+epoch [29/50], loss:0.3900
+epoch [30/50], loss:0.3819
+Pixel Auroc:0.978, Sample Auroc0.934, Pixel Aupro0.927
+epoch [31/50], loss:0.3754
+epoch [32/50], loss:0.3950
+epoch [33/50], loss:0.3667
+epoch [34/50], loss:0.3701
+epoch [35/50], loss:0.3769
+epoch [36/50], loss:0.3585
+epoch [37/50], loss:0.3551
+epoch [38/50], loss:0.3591
+epoch [39/50], loss:0.3480
+epoch [40/50], loss:0.3466
+Pixel Auroc:0.979, Sample Auroc0.965, Pixel Aupro0.93
+epoch [41/50], loss:0.3489
+epoch [42/50], loss:0.3408
+epoch [43/50], loss:0.3366
+epoch [44/50], loss:0.3339
+epoch [45/50], loss:0.3293
+epoch [46/50], loss:0.3310
+epoch [47/50], loss:0.3263
+epoch [48/50], loss:0.3211
+epoch [49/50], loss:0.3227
+epoch [50/50], loss:0.3168
+Pixel Auroc:0.977, Sample Auroc0.975, Pixel Aupro0.923
+Training T-S model on capsule
+epoch [1/50], loss:1.4597
+epoch [2/50], loss:0.8195
+epoch [3/50], loss:0.6368
+epoch [4/50], loss:0.5551
+epoch [5/50], loss:0.4615
+epoch [6/50], loss:0.4084
+epoch [7/50], loss:0.3690
+epoch [8/50], loss:0.3479
+epoch [9/50], loss:0.3245
+epoch [10/50], loss:0.2983
+Pixel Auroc:0.976, Sample Auroc0.715, Pixel Aupro0.915
+epoch [11/50], loss:0.2811
+epoch [12/50], loss:0.2663
+epoch [13/50], loss:0.2539
+epoch [14/50], loss:0.2372
+epoch [15/50], loss:0.2284
+epoch [16/50], loss:0.2140
+epoch [17/50], loss:0.2077
+epoch [18/50], loss:0.1997
+epoch [19/50], loss:0.1882
+epoch [20/50], loss:0.1841
+Pixel Auroc:0.982, Sample Auroc0.852, Pixel Aupro0.944
+epoch [21/50], loss:0.1770
+epoch [22/50], loss:0.1822
+epoch [23/50], loss:0.1709
+epoch [24/50], loss:0.1683
+epoch [25/50], loss:0.1671
+epoch [26/50], loss:0.1644
+epoch [27/50], loss:0.1629
+epoch [28/50], loss:0.1578
+epoch [29/50], loss:0.1562
+epoch [30/50], loss:0.1526
+Pixel Auroc:0.983, Sample Auroc0.918, Pixel Aupro0.949
+epoch [31/50], loss:0.1520
+epoch [32/50], loss:0.1488
+epoch [33/50], loss:0.1480
+epoch [34/50], loss:0.1494
+epoch [35/50], loss:0.1440
+epoch [36/50], loss:0.1447
+epoch [37/50], loss:0.1416
+epoch [38/50], loss:0.1427
+epoch [39/50], loss:0.1379
+epoch [40/50], loss:0.1372
+Pixel Auroc:0.984, Sample Auroc0.943, Pixel Aupro0.953
+epoch [41/50], loss:0.1314
+epoch [42/50], loss:0.1366
+epoch [43/50], loss:0.1346
+epoch [44/50], loss:0.1328
+epoch [45/50], loss:0.1310
+epoch [46/50], loss:0.1303
+epoch [47/50], loss:0.1258
+epoch [48/50], loss:0.1265
+epoch [49/50], loss:0.1245
+epoch [50/50], loss:0.1217
+Pixel Auroc:0.984, Sample Auroc0.949, Pixel Aupro0.954
+Traceback (most recent call last):
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 114, in <module>
+    test(args, c)
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 71, in test
+    for imgs, _, labels, class_defect, gndtruth in train_loader:
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/zeddo123/anom/RD4AD/easy_dataset.py", line 128, in __getitem__
+    return self._prepare_item(index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/easy_dataset.py", line 113, in _prepare_item
+    img = self.transform(img)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torchvision/transforms/transforms.py", line 277, in forward
+    return F.normalize(tensor, self.mean, self.std, self.inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torchvision/transforms/functional.py", line 350, in normalize
+    return F_t.normalize(tensor, mean=mean, std=std, inplace=inplace)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torchvision/transforms/_functional_tensor.py", line 926, in normalize
+    return tensor.sub_(mean).div_(std)
+           ^^^^^^^^^^^^^^^^^
+RuntimeError: output with shape [1, 256, 256] doesn't match the broadcast shape [3, 256, 256]
+Training T-S model on grid

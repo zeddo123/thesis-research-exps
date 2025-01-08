@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 120, in <module>
+    for c in categories_by_dataset[args.dataset_name]:
+             ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 'visa'

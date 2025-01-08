@@ -1,0 +1,212 @@
+2024-11-25 10:15:14,794 INFO    StreamThr :1311989 [internal.py:wandb_internal():85] W&B internal server running at pid: 1311989, started at: 2024-11-25 10:15:14.794081
+2024-11-25 10:15:14,796 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: status
+2024-11-25 10:15:14,803 INFO    WriterThread:1311989 [datastore.py:open_for_write():87] open: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/run-u9yxfkap.wandb
+2024-11-25 10:15:14,805 DEBUG   SenderThread:1311989 [sender.py:send():391] send: header
+2024-11-25 10:15:14,805 DEBUG   SenderThread:1311989 [sender.py:send():391] send: run
+2024-11-25 10:15:15,241 INFO    SenderThread:1311989 [dir_watcher.py:__init__():211] watching files in: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files
+2024-11-25 10:15:15,241 INFO    SenderThread:1311989 [sender.py:_start_run_threads():1200] run started: u9yxfkap with start time 1732529714.793848
+2024-11-25 10:15:15,254 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: check_version
+2024-11-25 10:15:15,254 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: check_version
+2024-11-25 10:15:15,380 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: run_start
+2024-11-25 10:15:15,393 DEBUG   HandlerThread:1311989 [system_info.py:__init__():26] System info init
+2024-11-25 10:15:15,393 DEBUG   HandlerThread:1311989 [system_info.py:__init__():41] System info init done
+2024-11-25 10:15:15,393 INFO    HandlerThread:1311989 [system_monitor.py:start():194] Starting system monitor
+2024-11-25 10:15:15,394 INFO    SystemMonitor:1311989 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-11-25 10:15:15,394 INFO    HandlerThread:1311989 [system_monitor.py:probe():214] Collecting system info
+2024-11-25 10:15:15,396 INFO    SystemMonitor:1311989 [interfaces.py:start():188] Started cpu monitoring
+2024-11-25 10:15:15,398 INFO    SystemMonitor:1311989 [interfaces.py:start():188] Started disk monitoring
+2024-11-25 10:15:15,400 INFO    SystemMonitor:1311989 [interfaces.py:start():188] Started gpu monitoring
+2024-11-25 10:15:15,402 INFO    SystemMonitor:1311989 [interfaces.py:start():188] Started memory monitoring
+2024-11-25 10:15:15,404 INFO    SystemMonitor:1311989 [interfaces.py:start():188] Started network monitoring
+2024-11-25 10:15:15,422 DEBUG   HandlerThread:1311989 [system_info.py:probe():152] Probing system
+2024-11-25 10:15:15,424 DEBUG   HandlerThread:1311989 [system_info.py:_probe_git():137] Probing git
+2024-11-25 10:15:15,432 DEBUG   HandlerThread:1311989 [system_info.py:_probe_git():145] Probing git done
+2024-11-25 10:15:15,432 DEBUG   HandlerThread:1311989 [system_info.py:probe():200] Probing system done
+2024-11-25 10:15:15,432 DEBUG   HandlerThread:1311989 [system_monitor.py:probe():223] {'os': 'Linux-6.8.0-1017-nvidia-x86_64-with-glibc2.39', 'python': '3.12.3', 'heartbeatAt': '2024-11-25T10:15:15.422625', 'startedAt': '2024-11-25T10:15:14.788522', 'docker': None, 'cuda': None, 'args': ('-dn', 'visa', '-dp', '../InCTRL/visa_anomaly_detection/visa', '-e', '100', '-bs', '10'), 'state': 'running', 'program': '/home/zeddo123/anom/RD4AD/easy_train.py', 'codePathLocal': 'easy_train.py', 'codePath': 'easy_train.py', 'git': {'remote': 'https://github.com/hq-deng/RD4AD', 'commit': '6554076872c65f8784f6ece8cfb39ce77e1aee12'}, 'email': None, 'root': '/home/zeddo123/anom/RD4AD', 'host': '9arnita', 'username': 'zeddo123', 'executable': '/home/zeddo123/anom/RD4AD/venv/bin/python', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 893.94196875, 'min': 800.0, 'max': 5087.5}, 'cpu_freq_per_core': [{'current': 1455.188, 'min': 800.0, 'max': 5700.0}, {'current': 1100.787, 'min': 800.0, 'max': 5700.0}, {'current': 1100.082, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 1417.229, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 1099.623, 'min': 800.0, 'max': 5700.0}, {'current': 1100.0, 'min': 800.0, 'max': 5700.0}, {'current': 1281.234, 'min': 800.0, 'max': 6000.0}, {'current': 800.0, 'min': 800.0, 'max': 6000.0}, {'current': 1100.669, 'min': 800.0, 'max': 6000.0}, {'current': 800.0, 'min': 800.0, 'max': 6000.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 1099.893, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.029, 'min': 800.0, 'max': 4400.0}, {'current': 799.86, 'min': 800.0, 'max': 4400.0}, {'current': 937.713, 'min': 800.0, 'max': 4400.0}, {'current': 801.131, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 1095.859, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 1173.761, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 1150.315, 'min': 800.0, 'max': 4400.0}], 'disk': {'/': {'total': 914.7823104858398, 'used': 794.5306549072266}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 62.56636047363281}}
+2024-11-25 10:15:15,433 INFO    HandlerThread:1311989 [system_monitor.py:probe():224] Finished collecting system info
+2024-11-25 10:15:15,433 INFO    HandlerThread:1311989 [system_monitor.py:probe():227] Publishing system info
+2024-11-25 10:15:15,434 INFO    HandlerThread:1311989 [system_monitor.py:probe():229] Finished publishing system info
+2024-11-25 10:15:15,439 DEBUG   SenderThread:1311989 [sender.py:send():391] send: files
+2024-11-25 10:15:15,439 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-11-25 10:15:15,467 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: python_packages
+2024-11-25 10:15:15,467 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: python_packages
+2024-11-25 10:15:15,467 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-25 10:15:15,467 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: stop_status
+2024-11-25 10:15:15,468 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:15,665 DEBUG   SenderThread:1311989 [sender.py:send():391] send: telemetry
+2024-11-25 10:15:16,066 INFO    wandb-upload_0:1311989 [upload_job.py:push():130] Uploaded file /tmp/tmpk233lmkmwandb/64v6br2u-wandb-metadata.json
+2024-11-25 10:15:16,241 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/wandb-metadata.json
+2024-11-25 10:15:16,241 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/requirements.txt
+2024-11-25 10:15:16,241 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log
+2024-11-25 10:15:16,468 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:16,667 DEBUG   SenderThread:1311989 [sender.py:send():391] send: telemetry
+2024-11-25 10:15:17,030 DEBUG   SenderThread:1311989 [sender.py:send():391] send: telemetry
+2024-11-25 10:15:17,030 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-25 10:15:17,165 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-25 10:15:17,165 DEBUG   SenderThread:1311989 [sender.py:send():391] send: history
+2024-11-25 10:15:17,166 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: summary_record
+2024-11-25 10:15:17,166 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-25 10:15:17,241 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/wandb-summary.json
+2024-11-25 10:15:17,296 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-25 10:15:17,296 DEBUG   SenderThread:1311989 [sender.py:send():391] send: history
+2024-11-25 10:15:17,296 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: summary_record
+2024-11-25 10:15:17,297 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-25 10:15:17,426 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-25 10:15:17,426 DEBUG   SenderThread:1311989 [sender.py:send():391] send: history
+2024-11-25 10:15:17,426 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: summary_record
+2024-11-25 10:15:17,426 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-25 10:15:17,468 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:17,596 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-25 10:15:17,596 DEBUG   SenderThread:1311989 [sender.py:send():391] send: history
+2024-11-25 10:15:17,596 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: summary_record
+2024-11-25 10:15:17,596 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-25 10:15:17,686 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-25 10:15:17,687 DEBUG   SenderThread:1311989 [sender.py:send():391] send: history
+2024-11-25 10:15:17,687 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: summary_record
+2024-11-25 10:15:17,687 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-25 10:15:17,817 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-25 10:15:17,817 DEBUG   SenderThread:1311989 [sender.py:send():391] send: history
+2024-11-25 10:15:17,817 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: summary_record
+2024-11-25 10:15:17,818 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-25 10:15:17,947 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-25 10:15:17,948 DEBUG   SenderThread:1311989 [sender.py:send():391] send: history
+2024-11-25 10:15:17,948 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: summary_record
+2024-11-25 10:15:17,948 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-25 10:15:18,077 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-25 10:15:18,078 DEBUG   SenderThread:1311989 [sender.py:send():391] send: history
+2024-11-25 10:15:18,078 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: summary_record
+2024-11-25 10:15:18,078 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-25 10:15:18,208 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-25 10:15:18,208 DEBUG   SenderThread:1311989 [sender.py:send():391] send: history
+2024-11-25 10:15:18,208 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: summary_record
+2024-11-25 10:15:18,208 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-25 10:15:18,241 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log
+2024-11-25 10:15:18,241 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/wandb-summary.json
+2024-11-25 10:15:18,468 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:19,241 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log
+2024-11-25 10:15:19,468 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:19,829 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: status_report
+2024-11-25 10:15:20,468 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:21,242 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log
+2024-11-25 10:15:21,468 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:22,468 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:23,242 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log
+2024-11-25 10:15:23,468 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:24,468 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:24,887 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: status_report
+2024-11-25 10:15:25,242 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log
+2024-11-25 10:15:25,469 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:26,472 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:27,243 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log
+2024-11-25 10:15:27,469 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:28,469 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:29,243 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log
+2024-11-25 10:15:29,469 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:29,966 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: status_report
+2024-11-25 10:15:30,467 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-25 10:15:30,468 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: stop_status
+2024-11-25 10:15:30,470 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:31,243 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log
+2024-11-25 10:15:31,470 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-25 10:15:31,899 DEBUG   SenderThread:1311989 [sender.py:send():391] send: exit
+2024-11-25 10:15:31,900 INFO    SenderThread:1311989 [sender.py:send_exit():598] handling exit code: 255
+2024-11-25 10:15:31,900 INFO    SenderThread:1311989 [sender.py:send_exit():600] handling runtime: 16
+2024-11-25 10:15:31,901 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-25 10:15:31,901 INFO    SenderThread:1311989 [sender.py:send_exit():606] send defer
+2024-11-25 10:15:31,902 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: defer
+2024-11-25 10:15:31,902 INFO    HandlerThread:1311989 [handler.py:handle_request_defer():184] handle defer: 0
+2024-11-25 10:15:31,903 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: defer
+2024-11-25 10:15:31,903 INFO    SenderThread:1311989 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-11-25 10:15:31,903 INFO    SenderThread:1311989 [sender.py:transition_state():626] send defer: 1
+2024-11-25 10:15:31,903 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: defer
+2024-11-25 10:15:31,903 INFO    HandlerThread:1311989 [handler.py:handle_request_defer():184] handle defer: 1
+2024-11-25 10:15:31,904 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: defer
+2024-11-25 10:15:31,904 INFO    SenderThread:1311989 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-11-25 10:15:31,904 INFO    SenderThread:1311989 [sender.py:transition_state():626] send defer: 2
+2024-11-25 10:15:31,904 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: defer
+2024-11-25 10:15:31,904 INFO    HandlerThread:1311989 [handler.py:handle_request_defer():184] handle defer: 2
+2024-11-25 10:15:31,904 INFO    HandlerThread:1311989 [system_monitor.py:finish():203] Stopping system monitor
+2024-11-25 10:15:31,905 DEBUG   SystemMonitor:1311989 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-11-25 10:15:31,906 INFO    HandlerThread:1311989 [interfaces.py:finish():200] Joined cpu monitor
+2024-11-25 10:15:31,907 DEBUG   SystemMonitor:1311989 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-11-25 10:15:31,907 INFO    HandlerThread:1311989 [interfaces.py:finish():200] Joined disk monitor
+2024-11-25 10:15:31,908 DEBUG   SystemMonitor:1311989 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-11-25 10:15:31,951 INFO    HandlerThread:1311989 [interfaces.py:finish():200] Joined gpu monitor
+2024-11-25 10:15:31,951 INFO    HandlerThread:1311989 [interfaces.py:finish():200] Joined memory monitor
+2024-11-25 10:15:31,951 INFO    HandlerThread:1311989 [interfaces.py:finish():200] Joined network monitor
+2024-11-25 10:15:31,952 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: defer
+2024-11-25 10:15:31,952 INFO    SenderThread:1311989 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-11-25 10:15:31,952 INFO    SenderThread:1311989 [sender.py:transition_state():626] send defer: 3
+2024-11-25 10:15:31,952 DEBUG   SenderThread:1311989 [sender.py:send():391] send: stats
+2024-11-25 10:15:31,952 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: defer
+2024-11-25 10:15:31,952 INFO    HandlerThread:1311989 [handler.py:handle_request_defer():184] handle defer: 3
+2024-11-25 10:15:31,952 DEBUG   SenderThread:1311989 [sender.py:send():391] send: history
+2024-11-25 10:15:31,952 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: summary_record
+2024-11-25 10:15:31,952 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-25 10:15:31,953 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: defer
+2024-11-25 10:15:31,953 INFO    SenderThread:1311989 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-11-25 10:15:31,953 INFO    SenderThread:1311989 [sender.py:transition_state():626] send defer: 4
+2024-11-25 10:15:31,953 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: defer
+2024-11-25 10:15:31,953 INFO    HandlerThread:1311989 [handler.py:handle_request_defer():184] handle defer: 4
+2024-11-25 10:15:31,953 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: defer
+2024-11-25 10:15:31,953 INFO    SenderThread:1311989 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-11-25 10:15:31,953 INFO    SenderThread:1311989 [sender.py:transition_state():626] send defer: 5
+2024-11-25 10:15:31,953 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: defer
+2024-11-25 10:15:31,953 INFO    HandlerThread:1311989 [handler.py:handle_request_defer():184] handle defer: 5
+2024-11-25 10:15:31,953 DEBUG   SenderThread:1311989 [sender.py:send():391] send: summary
+2024-11-25 10:15:31,953 INFO    SenderThread:1311989 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-25 10:15:31,953 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: defer
+2024-11-25 10:15:31,953 INFO    SenderThread:1311989 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-11-25 10:15:31,953 INFO    SenderThread:1311989 [sender.py:transition_state():626] send defer: 6
+2024-11-25 10:15:31,953 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: defer
+2024-11-25 10:15:31,953 INFO    HandlerThread:1311989 [handler.py:handle_request_defer():184] handle defer: 6
+2024-11-25 10:15:31,953 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: defer
+2024-11-25 10:15:31,954 INFO    SenderThread:1311989 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-11-25 10:15:31,955 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: status_report
+2024-11-25 10:15:32,225 INFO    SenderThread:1311989 [sender.py:transition_state():626] send defer: 7
+2024-11-25 10:15:32,225 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: defer
+2024-11-25 10:15:32,225 INFO    HandlerThread:1311989 [handler.py:handle_request_defer():184] handle defer: 7
+2024-11-25 10:15:32,226 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: defer
+2024-11-25 10:15:32,226 INFO    SenderThread:1311989 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-11-25 10:15:32,244 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/config.yaml
+2024-11-25 10:15:32,245 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/wandb-summary.json
+2024-11-25 10:15:32,900 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-25 10:15:33,245 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log
+2024-11-25 10:15:34,718 INFO    SenderThread:1311989 [sender.py:transition_state():626] send defer: 8
+2024-11-25 10:15:34,718 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: poll_exit
+2024-11-25 10:15:34,719 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: defer
+2024-11-25 10:15:34,719 INFO    HandlerThread:1311989 [handler.py:handle_request_defer():184] handle defer: 8
+2024-11-25 10:15:34,720 DEBUG   SenderThread:1311989 [sender.py:send_request():418] send_request: defer
+2024-11-25 10:15:34,720 INFO    SenderThread:1311989 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-11-25 10:15:34,720 INFO    SenderThread:1311989 [job_builder.py:build():443] Attempting to build job artifact
+2024-11-25 10:15:34,721 INFO    SenderThread:1311989 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-11-25 10:15:34,745 INFO    SenderThread:1311989 [job_builder.py:build():548] adding wandb-job metadata file
+2024-11-25 10:15:34,774 INFO    SenderThread:1311989 [sender.py:transition_state():626] send defer: 9
+2024-11-25 10:15:34,774 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: defer
+2024-11-25 10:15:34,775 INFO    HandlerThread:1311989 [handler.py:handle_request_defer():184] handle defer: 9
+2024-11-25 10:15:34,775 DEBUG   SenderThread:1311989 [sender.py:send():391] send: artifact
+2024-11-25 10:15:34,901 DEBUG   HandlerThread:1311989 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-25 10:15:35,245 INFO    Thread-12 :1311989 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log
+2024-11-25 10:15:35,887 INFO    wandb-upload_0:1311989 [upload_job.py:push():85] Skipped uploading /home/zeddo123/.local/share/wandb/artifacts/staging/tmpu3m0d7f0
+2024-11-25 10:15:39,220 INFO    wandb-upload_1:1311989 [upload_job.py:push():88] Uploaded file /tmp/tmpom347a3w/wandb-job.json
+2024-11-25 10:15:39,805 WARNING StreamThr :1311989 [internal.py:is_dead():413] Internal process exiting, parent pid 1311917 disappeared
+2024-11-25 10:15:39,806 ERROR   StreamThr :1311989 [internal.py:wandb_internal():151] Internal process shutdown.
+2024-11-25 10:15:39,902 INFO    WriterThread:1311989 [datastore.py:close():296] close: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/run-u9yxfkap.wandb
+2024-11-25 10:15:39,903 INFO    HandlerThread:1311989 [handler.py:finish():880] shutting down handler
+2024-11-25 10:15:40,260 INFO    SenderThread:1311989 [sender.py:send_artifact():1549] sent artifact job-https___github.com_hq-deng_RD4AD_easy_train.py - {'id': 'QXJ0aWZhY3Q6MTM0OTA2Njc0NA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxNTg4MTI4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTM0NjAwNTkyNA==', 'versionIndex': 16}}}
+2024-11-25 10:15:40,260 INFO    SenderThread:1311989 [sender.py:finish():1631] shutting down sender
+2024-11-25 10:15:40,260 INFO    SenderThread:1311989 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-11-25 10:15:41,247 INFO    SenderThread:1311989 [dir_watcher.py:finish():388] scan: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files
+2024-11-25 10:15:41,248 INFO    SenderThread:1311989 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/config.yaml config.yaml
+2024-11-25 10:15:41,248 INFO    SenderThread:1311989 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log output.log
+2024-11-25 10:15:41,253 INFO    SenderThread:1311989 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/wandb-metadata.json wandb-metadata.json
+2024-11-25 10:15:41,254 INFO    SenderThread:1311989 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/requirements.txt requirements.txt
+2024-11-25 10:15:41,254 INFO    SenderThread:1311989 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/wandb-summary.json wandb-summary.json
+2024-11-25 10:15:41,255 INFO    SenderThread:1311989 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-25 10:15:41,255 INFO    SenderThread:1311989 [file_pusher.py:join():175] waiting for file pusher
+2024-11-25 10:15:41,674 INFO    wandb-upload_0:1311989 [upload_job.py:push():130] Uploaded file /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/config.yaml
+2024-11-25 10:15:41,735 INFO    wandb-upload_1:1311989 [upload_job.py:push():130] Uploaded file /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/output.log
+2024-11-25 10:15:41,742 INFO    wandb-upload_3:1311989 [upload_job.py:push():130] Uploaded file /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/wandb-summary.json
+2024-11-25 10:15:41,757 INFO    wandb-upload_2:1311989 [upload_job.py:push():130] Uploaded file /home/zeddo123/anom/RD4AD/wandb/run-20241125_101514-u9yxfkap/files/requirements.txt
+2024-11-25 10:15:42,256 INFO    SenderThread:1311989 [file_stream.py:finish():601] file stream finish called
+2024-11-25 10:15:42,428 INFO    SenderThread:1311989 [file_stream.py:finish():605] file stream finish is done

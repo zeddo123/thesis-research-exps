@@ -2,4 +2,5 @@ InCTRL/venv
 InCTRL/trained_on_visa.zip
 InCTRL/visa_anomaly_detection
 __pycache__/*
+RD4AD/checkpoints
 

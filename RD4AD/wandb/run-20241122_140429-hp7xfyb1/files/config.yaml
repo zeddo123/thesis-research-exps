@@ -1,0 +1,2246 @@
+wandb_version: 1
+
+dataset_name:
+  desc: null
+  value: visa
+dataset_path:
+  desc: null
+  value: ../InCTRL/visa_anomaly_detection/visa
+epochs:
+  desc: null
+  value: 100
+learning_rate:
+  desc: null
+  value: 0.005
+batch_size:
+  desc: null
+  value: 10
+image_size:
+  desc: null
+  value: 256
+run:
+  desc: null
+  value: training
+model:
+  desc: null
+  value: RD4AD
+device:
+  desc: null
+  value: 0
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.3
+    cli_version: 0.17.7
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1732284269
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      3:
+      - 1
+      - 16
+      - 23
+      - 61
+      4: 3.12.3
+      5: 0.17.7
+      8:
+      - 5
+      13: linux-x86_64
+    visualize:
+      candle_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: candle_ROC_table
+                fields: []
+      candle_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: candle_PR_table
+                fields: []
+      candle_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: candle False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: candle_fpr_table
+                fields: []
+      candle_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: candle True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: candle_tpr_table
+                fields: []
+      candle_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: candle Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: candle_precision_table
+                fields: []
+      candle_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: candle Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: candle_recall_table
+                fields: []
+      capsules_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: capsules_ROC_table
+                fields: []
+      capsules_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: capsules_PR_table
+                fields: []
+      capsules_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: capsules False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: capsules_fpr_table
+                fields: []
+      capsules_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: capsules True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: capsules_tpr_table
+                fields: []
+      capsules_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: capsules Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: capsules_precision_table
+                fields: []
+      capsules_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: capsules Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: capsules_recall_table
+                fields: []
+      cashew_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: cashew_ROC_table
+                fields: []
+      cashew_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: cashew_PR_table
+                fields: []
+      cashew_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: cashew False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: cashew_fpr_table
+                fields: []
+      cashew_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: cashew True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: cashew_tpr_table
+                fields: []
+      cashew_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: cashew Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: cashew_precision_table
+                fields: []
+      cashew_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: cashew Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: cashew_recall_table
+                fields: []
+      chewinggum_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: chewinggum_ROC_table
+                fields: []
+      chewinggum_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: chewinggum_PR_table
+                fields: []
+      chewinggum_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: chewinggum False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: chewinggum_fpr_table
+                fields: []
+      chewinggum_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: chewinggum True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: chewinggum_tpr_table
+                fields: []
+      chewinggum_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: chewinggum Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: chewinggum_precision_table
+                fields: []
+      chewinggum_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: chewinggum Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: chewinggum_recall_table
+                fields: []
+      fryum_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: fryum_ROC_table
+                fields: []
+      fryum_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: fryum_PR_table
+                fields: []
+      fryum_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: fryum False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: fryum_fpr_table
+                fields: []
+      fryum_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: fryum True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: fryum_tpr_table
+                fields: []
+      fryum_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: fryum Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: fryum_precision_table
+                fields: []
+      fryum_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: fryum Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: fryum_recall_table
+                fields: []
+      macaroni1_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: macaroni1_ROC_table
+                fields: []
+      macaroni1_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: macaroni1_PR_table
+                fields: []
+      macaroni1_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: macaroni1 False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: macaroni1_fpr_table
+                fields: []
+      macaroni1_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: macaroni1 True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: macaroni1_tpr_table
+                fields: []
+      macaroni1_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: macaroni1 Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: macaroni1_precision_table
+                fields: []
+      macaroni1_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: macaroni1 Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: macaroni1_recall_table
+                fields: []
+      macaroni2_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: macaroni2_ROC_table
+                fields: []
+      macaroni2_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: macaroni2_PR_table
+                fields: []
+      macaroni2_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: macaroni2 False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: macaroni2_fpr_table
+                fields: []
+      macaroni2_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: macaroni2 True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: macaroni2_tpr_table
+                fields: []
+      macaroni2_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: macaroni2 Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: macaroni2_precision_table
+                fields: []
+      macaroni2_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: macaroni2 Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: macaroni2_recall_table
+                fields: []
+      pcb1_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb1_ROC_table
+                fields: []
+      pcb1_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb1_PR_table
+                fields: []
+      pcb1_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: pcb1 False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb1_fpr_table
+                fields: []
+      pcb1_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: pcb1 True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb1_tpr_table
+                fields: []
+      pcb1_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: pcb1 Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb1_precision_table
+                fields: []
+      pcb1_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: pcb1 Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb1_recall_table
+                fields: []
+      pcb2_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb2_ROC_table
+                fields: []
+      pcb2_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb2_PR_table
+                fields: []
+      pcb2_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: pcb2 False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb2_fpr_table
+                fields: []
+      pcb2_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: pcb2 True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb2_tpr_table
+                fields: []
+      pcb2_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: pcb2 Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb2_precision_table
+                fields: []
+      pcb2_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: pcb2 Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb2_recall_table
+                fields: []
+      pcb3_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb3_ROC_table
+                fields: []
+      pcb3_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb3_PR_table
+                fields: []
+      pcb3_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: pcb3 False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb3_fpr_table
+                fields: []
+      pcb3_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: pcb3 True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb3_tpr_table
+                fields: []
+      pcb3_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: pcb3 Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb3_precision_table
+                fields: []
+      pcb3_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: pcb3 Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb3_recall_table
+                fields: []
+      pcb4_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb4_ROC_table
+                fields: []
+      pcb4_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb4_PR_table
+                fields: []
+      pcb4_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: pcb4 False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb4_fpr_table
+                fields: []
+      pcb4_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: pcb4 True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb4_tpr_table
+                fields: []
+      pcb4_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: pcb4 Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb4_precision_table
+                fields: []
+      pcb4_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: pcb4 Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pcb4_recall_table
+                fields: []
+      pipe_fryum_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pipe_fryum_ROC_table
+                fields: []
+      pipe_fryum_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pipe_fryum_PR_table
+                fields: []
+      pipe_fryum_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: pipe_fryum False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pipe_fryum_fpr_table
+                fields: []
+      pipe_fryum_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: pipe_fryum True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pipe_fryum_tpr_table
+                fields: []
+      pipe_fryum_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: pipe_fryum Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pipe_fryum_precision_table
+                fields: []
+      pipe_fryum_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: pipe_fryum Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: pipe_fryum_recall_table
+                fields: []

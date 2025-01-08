@@ -1,0 +1,22 @@
+
+Training T-S model on carpet
+epoch [1/150], loss:1.4381
+epoch [2/150], loss:0.8693
+epoch [3/150], loss:0.7488
+epoch [4/150], loss:0.6788
+epoch [5/150], loss:0.6262
+epoch [6/150], loss:0.5910
+epoch [7/150], loss:0.5577
+epoch [8/150], loss:0.5347
+epoch [9/150], loss:0.5000
+epoch [10/150], loss:0.4775
+Traceback (most recent call last):
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 108, in <module>
+    test(args, c)
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 82, in test
+    auroc_px, auroc_sp, aupro_px = evaluation(encoder, bn, decoder, test_loader, device, _class_=_class_)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/test.py", line 99, in evaluation
+    y_pred.extend(outputs.tolist())
+                  ^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'tolist'

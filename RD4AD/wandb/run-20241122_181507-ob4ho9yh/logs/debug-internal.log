@@ -1,0 +1,919 @@
+2024-11-22 18:15:07,444 INFO    StreamThr :1056943 [internal.py:wandb_internal():85] W&B internal server running at pid: 1056943, started at: 2024-11-22 18:15:07.444080
+2024-11-22 18:15:07,445 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status
+2024-11-22 18:15:07,449 INFO    WriterThread:1056943 [datastore.py:open_for_write():87] open: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/run-ob4ho9yh.wandb
+2024-11-22 18:15:07,450 DEBUG   SenderThread:1056943 [sender.py:send():391] send: header
+2024-11-22 18:15:07,451 DEBUG   SenderThread:1056943 [sender.py:send():391] send: run
+2024-11-22 18:15:07,893 INFO    SenderThread:1056943 [dir_watcher.py:__init__():211] watching files in: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files
+2024-11-22 18:15:07,893 INFO    SenderThread:1056943 [sender.py:_start_run_threads():1200] run started: ob4ho9yh with start time 1732299307.443817
+2024-11-22 18:15:07,897 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: check_version
+2024-11-22 18:15:07,897 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: check_version
+2024-11-22 18:15:07,999 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: run_start
+2024-11-22 18:15:08,012 DEBUG   HandlerThread:1056943 [system_info.py:__init__():26] System info init
+2024-11-22 18:15:08,012 DEBUG   HandlerThread:1056943 [system_info.py:__init__():41] System info init done
+2024-11-22 18:15:08,012 INFO    HandlerThread:1056943 [system_monitor.py:start():194] Starting system monitor
+2024-11-22 18:15:08,012 INFO    SystemMonitor:1056943 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-11-22 18:15:08,012 INFO    HandlerThread:1056943 [system_monitor.py:probe():214] Collecting system info
+2024-11-22 18:15:08,012 INFO    SystemMonitor:1056943 [interfaces.py:start():188] Started cpu monitoring
+2024-11-22 18:15:08,013 INFO    SystemMonitor:1056943 [interfaces.py:start():188] Started disk monitoring
+2024-11-22 18:15:08,013 INFO    SystemMonitor:1056943 [interfaces.py:start():188] Started gpu monitoring
+2024-11-22 18:15:08,013 INFO    SystemMonitor:1056943 [interfaces.py:start():188] Started memory monitoring
+2024-11-22 18:15:08,014 INFO    SystemMonitor:1056943 [interfaces.py:start():188] Started network monitoring
+2024-11-22 18:15:08,027 DEBUG   HandlerThread:1056943 [system_info.py:probe():152] Probing system
+2024-11-22 18:15:08,028 DEBUG   HandlerThread:1056943 [system_info.py:_probe_git():137] Probing git
+2024-11-22 18:15:08,031 DEBUG   HandlerThread:1056943 [system_info.py:_probe_git():145] Probing git done
+2024-11-22 18:15:08,031 DEBUG   HandlerThread:1056943 [system_info.py:probe():200] Probing system done
+2024-11-22 18:15:08,031 DEBUG   HandlerThread:1056943 [system_monitor.py:probe():223] {'os': 'Linux-6.8.0-1017-nvidia-x86_64-with-glibc2.39', 'python': '3.12.3', 'heartbeatAt': '2024-11-22T18:15:08.027184', 'startedAt': '2024-11-22T18:15:07.439650', 'docker': None, 'cuda': None, 'args': ('-dn', 'chexpert', '-dp', '../datasets/chexpert_mvtec', '-e', '1', '-bs', '30'), 'state': 'running', 'program': '/home/zeddo123/anom/RD4AD/easy_train.py', 'codePathLocal': 'easy_train.py', 'codePath': 'easy_train.py', 'git': {'remote': 'https://github.com/hq-deng/RD4AD', 'commit': '6554076872c65f8784f6ece8cfb39ce77e1aee12'}, 'email': None, 'root': '/home/zeddo123/anom/RD4AD', 'host': '9arnita', 'username': 'zeddo123', 'executable': '/home/zeddo123/anom/RD4AD/venv/bin/python', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 1749.3340937500002, 'min': 800.0, 'max': 5087.5}, 'cpu_freq_per_core': [{'current': 5700.0, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 3771.238, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 1100.123, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 6000.0}, {'current': 800.0, 'min': 800.0, 'max': 6000.0}, {'current': 800.0, 'min': 800.0, 'max': 6000.0}, {'current': 800.0, 'min': 800.0, 'max': 6000.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 1252.87, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 4400.216, 'min': 800.0, 'max': 4400.0}, {'current': 2858.59, 'min': 800.0, 'max': 4400.0}, {'current': 2857.526, 'min': 800.0, 'max': 4400.0}, {'current': 2699.245, 'min': 800.0, 'max': 4400.0}, {'current': 2506.854, 'min': 800.0, 'max': 4400.0}, {'current': 2389.406, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 2375.438, 'min': 800.0, 'max': 4400.0}, {'current': 2675.174, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 2096.705, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 2484.274, 'min': 800.0, 'max': 4400.0}], 'disk': {'/': {'total': 914.7823104858398, 'used': 789.936279296875}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 62.56636047363281}}
+2024-11-22 18:15:08,031 INFO    HandlerThread:1056943 [system_monitor.py:probe():224] Finished collecting system info
+2024-11-22 18:15:08,031 INFO    HandlerThread:1056943 [system_monitor.py:probe():227] Publishing system info
+2024-11-22 18:15:08,031 INFO    HandlerThread:1056943 [system_monitor.py:probe():229] Finished publishing system info
+2024-11-22 18:15:08,034 DEBUG   SenderThread:1056943 [sender.py:send():391] send: files
+2024-11-22 18:15:08,034 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-11-22 18:15:08,058 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: python_packages
+2024-11-22 18:15:08,059 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: python_packages
+2024-11-22 18:15:08,099 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-22 18:15:08,099 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:08,099 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: stop_status
+2024-11-22 18:15:08,336 DEBUG   SenderThread:1056943 [sender.py:send():391] send: telemetry
+2024-11-22 18:15:08,625 INFO    wandb-upload_0:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/l2y3udym-wandb-metadata.json
+2024-11-22 18:15:08,893 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:08,893 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/wandb-metadata.json
+2024-11-22 18:15:08,893 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/requirements.txt
+2024-11-22 18:15:09,054 DEBUG   SenderThread:1056943 [sender.py:send():391] send: telemetry
+2024-11-22 18:15:09,094 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:10,060 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:10,893 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:11,060 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:11,893 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:12,060 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:12,538 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:15:13,060 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:13,894 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:14,060 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:15,060 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:15,894 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:16,060 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:17,061 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:17,651 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:15:17,895 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:18,060 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:19,061 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:19,896 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:20,061 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:21,061 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:21,896 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:22,061 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:22,830 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:15:23,059 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-22 18:15:23,059 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: stop_status
+2024-11-22 18:15:23,061 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:23,897 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:24,061 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:25,061 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:25,897 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:26,061 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:27,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:27,897 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:27,941 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:15:28,061 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:29,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:29,898 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:30,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:31,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:31,898 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:32,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:33,055 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:15:33,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:33,898 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:34,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:35,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:35,899 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:36,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:37,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:37,899 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:38,059 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-22 18:15:38,059 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: stop_status
+2024-11-22 18:15:38,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:38,307 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:15:38,899 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/config.yaml
+2024-11-22 18:15:39,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:39,899 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:40,001 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-22 18:15:40,002 DEBUG   SenderThread:1056943 [sender.py:send():391] send: telemetry
+2024-11-22 18:15:40,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:41,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:41,900 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:42,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:43,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:43,488 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:15:43,900 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:44,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:45,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:45,900 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:46,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:47,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:47,900 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:48,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:48,596 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:15:49,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:49,901 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:50,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:51,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:51,901 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:52,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:53,059 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-22 18:15:53,059 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: stop_status
+2024-11-22 18:15:53,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:53,679 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:15:53,901 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:54,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:55,063 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:55,901 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:56,064 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:57,064 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:57,902 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:15:58,064 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:58,783 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:15:59,064 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:15:59,902 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:16:00,064 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:01,345 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:01,902 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:16:02,345 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:03,345 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:03,903 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:16:03,944 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:16:04,345 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:05,345 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:05,903 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:16:06,345 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:07,345 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:07,903 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:16:08,014 DEBUG   SystemMonitor:1056943 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-11-22 18:16:08,015 DEBUG   SenderThread:1056943 [sender.py:send():391] send: stats
+2024-11-22 18:16:08,358 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-22 18:16:08,358 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: stop_status
+2024-11-22 18:16:08,358 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:09,554 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:09,594 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:16:09,904 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:16:09,904 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/config.yaml
+2024-11-22 18:16:10,554 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:11,520 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: log_artifact
+2024-11-22 18:16:11,521 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: log_artifact
+2024-11-22 18:16:11,560 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:11,860 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-22 18:16:11,904 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_pred_0_e4b74ec2169abcb970d2.table.json
+2024-11-22 18:16:11,905 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media
+2024-11-22 18:16:11,905 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table
+2024-11-22 18:16:12,062 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: log_artifact
+2024-11-22 18:16:12,071 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-22 18:16:12,262 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: log_artifact
+2024-11-22 18:16:12,272 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-22 18:16:12,347 INFO    wandb-upload_0:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/twa630gf-media/table/chest_pred_0_e4b74ec2169abcb970d2.table.json
+2024-11-22 18:16:12,479 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: log_artifact
+2024-11-22 18:16:12,555 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:12,679 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: log_artifact
+2024-11-22 18:16:12,926 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: log_artifact
+2024-11-22 18:16:12,953 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_ROC_table_1_8020e3ee4c47f3cad26e.table.json
+2024-11-22 18:16:12,955 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_PR_table_2_96ecf5ea6d9fbf2ee212.table.json
+2024-11-22 18:16:12,957 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_tpr_table_3_bb826df84e2915e313ad.table.json
+2024-11-22 18:16:12,961 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_precision_table_3_afb51631b1982853d1a5.table.json
+2024-11-22 18:16:12,962 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_recall_table_3_9c452358e1987ebe1d9e.table.json
+2024-11-22 18:16:12,962 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table
+2024-11-22 18:16:13,555 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:13,731 INFO    wandb-upload_10:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmppc7gjqor
+2024-11-22 18:16:13,850 INFO    wandb-upload_28:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpsw5_ez_6
+2024-11-22 18:16:14,125 INFO    wandb-upload_43:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp07s_fhpw
+2024-11-22 18:16:14,212 INFO    wandb-upload_60:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmppixflqua
+2024-11-22 18:16:14,264 INFO    wandb-upload_16:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpczt_lun6
+2024-11-22 18:16:14,352 INFO    wandb-upload_47:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmyqvfmdh
+2024-11-22 18:16:14,507 INFO    wandb-upload_27:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpdlgmsesk
+2024-11-22 18:16:14,554 INFO    wandb-upload_33:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpa3f2nczs
+2024-11-22 18:16:14,555 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:14,625 INFO    wandb-upload_39:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpn5gv7ume
+2024-11-22 18:16:14,748 INFO    wandb-upload_23:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp1u8uo6sv
+2024-11-22 18:16:14,749 INFO    wandb-upload_36:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5yb5vqgn
+2024-11-22 18:16:14,850 INFO    wandb-upload_24:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpsl39rcoa
+2024-11-22 18:16:14,867 INFO    wandb-upload_20:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpzpgllas9
+2024-11-22 18:16:14,873 INFO    wandb-upload_58:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkqzufxxr
+2024-11-22 18:16:14,912 INFO    wandb-upload_48:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpj3p3zaai
+2024-11-22 18:16:15,116 INFO    wandb-upload_32:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8on4a62a
+2024-11-22 18:16:15,192 INFO    wandb-upload_21:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp4aq_qzx4
+2024-11-22 18:16:15,251 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: log_artifact
+2024-11-22 18:16:15,260 INFO    wandb-upload_14:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpfy7hvsoi
+2024-11-22 18:16:15,292 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-22 18:16:15,322 INFO    wandb-upload_19:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpemqyz5s3
+2024-11-22 18:16:15,350 INFO    wandb-upload_5:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp17c7kknp
+2024-11-22 18:16:15,445 INFO    wandb-upload_51:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpr4yr0kp8
+2024-11-22 18:16:15,505 INFO    wandb-upload_17:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp20fc34yn
+2024-11-22 18:16:15,511 INFO    wandb-upload_30:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmprwggs8nm
+2024-11-22 18:16:15,535 INFO    wandb-upload_6:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpdhzrz6fd
+2024-11-22 18:16:15,745 INFO    wandb-upload_9:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp6c3ybuty
+2024-11-22 18:16:15,787 INFO    wandb-upload_61:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp45i449_n
+2024-11-22 18:16:15,807 INFO    wandb-upload_34:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8z8fs1ty
+2024-11-22 18:16:15,881 INFO    wandb-upload_0:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpffz28tdg
+2024-11-22 18:16:15,884 INFO    wandb-upload_1:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp14uh7jpb
+2024-11-22 18:16:15,949 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_fpr_table_3_b37990322dceb1bd4246.table.json
+2024-11-22 18:16:15,949 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table
+2024-11-22 18:16:15,972 INFO    wandb-upload_2:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpceovum_w
+2024-11-22 18:16:16,142 INFO    wandb-upload_59:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp9_4nyv57
+2024-11-22 18:16:16,151 INFO    wandb-upload_55:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpavg89nf1
+2024-11-22 18:16:16,243 INFO    wandb-upload_7:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpo4437sjs
+2024-11-22 18:16:16,259 INFO    wandb-upload_10:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpxu_mepyr
+2024-11-22 18:16:16,267 INFO    wandb-upload_35:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpexw5c1iz
+2024-11-22 18:16:16,274 INFO    wandb-upload_53:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpnbkkagjc
+2024-11-22 18:16:16,293 INFO    wandb-upload_26:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp0c0mnq3o
+2024-11-22 18:16:16,296 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-22 18:16:16,312 INFO    wandb-upload_25:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpy7th6yez
+2024-11-22 18:16:16,328 INFO    wandb-upload_18:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpxshajqno
+2024-11-22 18:16:16,342 INFO    wandb-upload_40:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkdvfyi9k
+2024-11-22 18:16:16,356 INFO    wandb-upload_29:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp7xyggp7l
+2024-11-22 18:16:16,381 INFO    wandb-upload_33:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkha19qho
+2024-11-22 18:16:16,430 INFO    wandb-upload_50:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp60d7ry5j
+2024-11-22 18:16:16,490 INFO    wandb-upload_37:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpas_qr6fs
+2024-11-22 18:16:16,584 INFO    wandb-upload_54:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp2r2badgv
+2024-11-22 18:16:16,634 INFO    wandb-upload_45:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp2r09th_p
+2024-11-22 18:16:16,705 INFO    wandb-upload_12:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpieo_2wx2
+2024-11-22 18:16:16,720 INFO    wandb-upload_13:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpy8tderq4
+2024-11-22 18:16:16,770 INFO    wandb-upload_42:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmppq9n9igq
+2024-11-22 18:16:16,819 INFO    wandb-upload_8:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmxajniyk
+2024-11-22 18:16:16,853 INFO    wandb-upload_46:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmpdo34g9
+2024-11-22 18:16:16,862 INFO    wandb-upload_15:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpp4ls2m_m
+2024-11-22 18:16:16,865 INFO    wandb-upload_20:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjvbnpbbh
+2024-11-22 18:16:16,967 INFO    wandb-upload_31:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmk4fa_hb
+2024-11-22 18:16:17,101 INFO    wandb-upload_48:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmps0p05tnd
+2024-11-22 18:16:17,133 INFO    wandb-upload_47:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp2ztbtmka
+2024-11-22 18:16:17,179 INFO    wandb-upload_49:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpp5jscyab
+2024-11-22 18:16:17,180 INFO    wandb-upload_11:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmgwnkcbt
+2024-11-22 18:16:17,219 INFO    wandb-upload_4:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkegkdphb
+2024-11-22 18:16:17,284 INFO    wandb-upload_27:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpvnc1_uil
+2024-11-22 18:16:17,370 INFO    wandb-upload_57:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp7lq2xf95
+2024-11-22 18:16:17,454 INFO    wandb-upload_44:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpu6_me5ak
+2024-11-22 18:16:17,550 INFO    wandb-upload_63:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp9a625mr1
+2024-11-22 18:16:17,587 INFO    wandb-upload_3:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpwk5s5ni6
+2024-11-22 18:16:17,701 INFO    wandb-upload_9:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpabqu2f77
+2024-11-22 18:16:17,795 INFO    wandb-upload_62:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpqwamvjee
+2024-11-22 18:16:17,801 INFO    wandb-upload_21:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmu5eb_ud
+2024-11-22 18:16:17,803 INFO    wandb-upload_58:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpd_6m_zng
+2024-11-22 18:16:17,822 INFO    wandb-upload_32:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpo7suo72f
+2024-11-22 18:16:17,822 INFO    wandb-upload_36:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpo3xgft_l
+2024-11-22 18:16:17,828 INFO    wandb-upload_28:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpqvzqjfwu
+2024-11-22 18:16:17,836 INFO    wandb-upload_24:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpaoa4t10p
+2024-11-22 18:16:17,981 INFO    wandb-upload_23:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpa3u94rwe
+2024-11-22 18:16:17,982 INFO    wandb-upload_22:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmphxilhgcr
+2024-11-22 18:16:17,990 INFO    wandb-upload_43:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp7x1g_t6c
+2024-11-22 18:16:18,132 INFO    wandb-upload_19:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpekf9a3i_
+2024-11-22 18:16:18,136 INFO    wandb-upload_0:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8b6tmry0
+2024-11-22 18:16:18,157 INFO    wandb-upload_60:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpc7f2cyl5
+2024-11-22 18:16:18,221 INFO    wandb-upload_52:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmptt2ef32d
+2024-11-22 18:16:18,274 INFO    wandb-upload_17:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpivh_jmvm
+2024-11-22 18:16:18,284 INFO    wandb-upload_14:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpzgemvqvw
+2024-11-22 18:16:18,310 INFO    wandb-upload_16:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpug0ho46a
+2024-11-22 18:16:18,340 INFO    wandb-upload_42:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5lqwfwy6
+2024-11-22 18:16:18,348 INFO    wandb-upload_41:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpo5578i6o
+2024-11-22 18:16:18,403 INFO    wandb-upload_30:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpu5w9cabg
+2024-11-22 18:16:18,644 INFO    wandb-upload_33:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp46kf8i_6
+2024-11-22 18:16:18,682 INFO    wandb-upload_5:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpp2judjj4
+2024-11-22 18:16:18,690 INFO    wandb-upload_39:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp0s_qqf49
+2024-11-22 18:16:18,743 INFO    wandb-upload_56:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpxpn1mytp
+2024-11-22 18:16:18,868 INFO    wandb-upload_59:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpl45glib1
+2024-11-22 18:16:18,953 INFO    wandb-upload_6:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpikne2wmf
+2024-11-22 18:16:18,964 INFO    wandb-upload_61:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp95xwf7bc
+2024-11-22 18:16:18,970 INFO    wandb-upload_2:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkvxhkahe
+2024-11-22 18:16:18,972 INFO    wandb-upload_25:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpe5z2yd6e
+2024-11-22 18:16:18,974 INFO    wandb-upload_29:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpf9pyx6k7
+2024-11-22 18:16:18,978 INFO    wandb-upload_54:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpfbsa0p4n
+2024-11-22 18:16:19,004 INFO    wandb-upload_34:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpxde2zxu5
+2024-11-22 18:16:19,070 INFO    wandb-upload_10:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5x8wlypf
+2024-11-22 18:16:19,126 INFO    wandb-upload_37:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpvepmu_za
+2024-11-22 18:16:19,231 INFO    wandb-upload_12:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpqxfglit8
+2024-11-22 18:16:19,282 INFO    wandb-upload_38:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpq2gdi5ir
+2024-11-22 18:16:19,436 INFO    wandb-upload_57:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpho1j5vcm
+2024-11-22 18:16:19,653 INFO    wandb-upload_11:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpgq10t6xo
+2024-11-22 18:16:19,785 INFO    wandb-upload_49:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmplzhx_jcy
+2024-11-22 18:16:19,929 INFO    wandb-upload_20:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp64_owy4i
+2024-11-22 18:16:19,945 INFO    wandb-upload_1:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpwtgrnkar
+2024-11-22 18:16:19,962 INFO    wandb-upload_7:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp4jazs4kw
+2024-11-22 18:16:20,069 INFO    wandb-upload_35:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpvy79ep_r
+2024-11-22 18:16:20,099 INFO    wandb-upload_31:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpwyqoiu73
+2024-11-22 18:16:20,106 INFO    wandb-upload_9:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpd2u82254
+2024-11-22 18:16:20,140 INFO    wandb-upload_51:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpdia5htlr
+2024-11-22 18:16:20,196 INFO    wandb-upload_26:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpp_b3_w0l
+2024-11-22 18:16:20,239 INFO    wandb-upload_45:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpnp5uh882
+2024-11-22 18:16:20,261 INFO    wandb-upload_55:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8591dqlh
+2024-11-22 18:16:20,314 INFO    wandb-upload_60:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmppg7pkkpl
+2024-11-22 18:16:20,416 INFO    wandb-upload_15:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpz5wqkueq
+2024-11-22 18:16:20,429 INFO    wandb-upload_50:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmphk4rv1g8
+2024-11-22 18:16:20,430 INFO    wandb-upload_8:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjhh6bnea
+2024-11-22 18:16:20,431 INFO    wandb-upload_21:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpir5r3y5i
+2024-11-22 18:16:20,431 INFO    wandb-upload_46:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpy1h61acf
+2024-11-22 18:16:20,451 INFO    wandb-upload_48:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpb12s9_67
+2024-11-22 18:16:20,477 INFO    wandb-upload_13:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp4y73zvru
+2024-11-22 18:16:20,523 INFO    wandb-upload_27:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmprrvmfv11
+2024-11-22 18:16:20,538 INFO    wandb-upload_0:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmptzq02z_e
+2024-11-22 18:16:20,556 INFO    wandb-upload_53:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp6bbz66xx
+2024-11-22 18:16:20,599 INFO    wandb-upload_22:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpeej5tnyf
+2024-11-22 18:16:20,627 INFO    wandb-upload_47:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpra95tcpj
+2024-11-22 18:16:20,730 INFO    wandb-upload_40:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpp9gp8nzi
+2024-11-22 18:16:20,770 INFO    wandb-upload_18:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmppb34qzcr
+2024-11-22 18:16:20,782 INFO    wandb-upload_36:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmps491hr4h
+2024-11-22 18:16:20,959 INFO    wandb-upload_23:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbqob44s2
+2024-11-22 18:16:21,144 INFO    wandb-upload_28:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp2gsjw36d
+2024-11-22 18:16:21,183 INFO    wandb-upload_41:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp33v4yz_d
+2024-11-22 18:16:21,296 INFO    wandb-upload_24:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5tmxu_ww
+2024-11-22 18:16:21,297 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: keepalive
+2024-11-22 18:16:21,337 INFO    wandb-upload_5:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpopcn94f0
+2024-11-22 18:16:21,397 INFO    wandb-upload_30:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp952qm3rk
+2024-11-22 18:16:21,403 INFO    wandb-upload_14:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8tz0dy6n
+2024-11-22 18:16:21,457 INFO    wandb-upload_17:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp2ih9utp2
+2024-11-22 18:16:21,578 INFO    wandb-upload_16:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbbl2clae
+2024-11-22 18:16:21,597 INFO    wandb-upload_62:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp1dc1qr7m
+2024-11-22 18:16:21,610 INFO    wandb-upload_59:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkf3uwpq3
+2024-11-22 18:16:21,629 INFO    wandb-upload_3:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbdg82d39
+2024-11-22 18:16:21,635 INFO    wandb-upload_52:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpfz6tkikw
+2024-11-22 18:16:21,649 INFO    wandb-upload_63:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmptpdd4jcu
+2024-11-22 18:16:21,650 INFO    wandb-upload_33:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmivlsv3m
+2024-11-22 18:16:21,739 INFO    wandb-upload_43:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp6pqjduiu
+2024-11-22 18:16:21,831 INFO    wandb-upload_4:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjneu5n6g
+2024-11-22 18:16:21,832 INFO    wandb-upload_58:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpnk3p51f4
+2024-11-22 18:16:21,895 INFO    wandb-upload_19:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpce97_w1v
+2024-11-22 18:16:21,988 INFO    wandb-upload_32:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpzn9dzqsj
+2024-11-22 18:16:22,050 INFO    wandb-upload_56:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp_b6tcuu3
+2024-11-22 18:16:22,347 INFO    wandb-upload_39:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpi6p8ojph
+2024-11-22 18:16:22,575 INFO    wandb-upload_37:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpgezb1eta
+2024-11-22 18:16:22,643 INFO    wandb-upload_6:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp1w_vu1mh
+2024-11-22 18:16:22,652 INFO    wandb-upload_10:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpcu5v5hr9
+2024-11-22 18:16:22,663 INFO    wandb-upload_49:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmwf9svg0
+2024-11-22 18:16:22,684 INFO    wandb-upload_60:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpy3uv4oi6
+2024-11-22 18:16:22,708 INFO    wandb-upload_7:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpm3mrrnud
+2024-11-22 18:16:22,770 INFO    wandb-upload_9:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpk9qep03q
+2024-11-22 18:16:22,770 INFO    wandb-upload_44:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpn209uzp8
+2024-11-22 18:16:22,771 INFO    wandb-upload_35:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpfp6ojo2q
+2024-11-22 18:16:22,813 INFO    wandb-upload_20:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpd1c61qkb
+2024-11-22 18:16:22,814 INFO    wandb-upload_57:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp7dm5jfeb
+2024-11-22 18:16:22,844 INFO    wandb-upload_61:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjyjotvob
+2024-11-22 18:16:22,883 INFO    wandb-upload_26:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp0vufiyer
+2024-11-22 18:16:22,911 INFO    wandb-upload_51:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpvw06s8b3
+2024-11-22 18:16:22,956 INFO    wandb-upload_42:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpz9iq20_7
+2024-11-22 18:16:22,972 INFO    wandb-upload_34:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpadz9ueus
+2024-11-22 18:16:23,066 INFO    wandb-upload_38:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmptam2bv02
+2024-11-22 18:16:23,107 INFO    wandb-upload_29:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpek33n2y0
+2024-11-22 18:16:23,117 INFO    wandb-upload_2:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmputqfkvqy
+2024-11-22 18:16:23,637 INFO    wandb-upload_15:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbtv2_46f
+2024-11-22 18:16:23,668 INFO    wandb-upload_45:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpuwwg4n6k
+2024-11-22 18:16:23,668 INFO    wandb-upload_25:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkbd3fsh6
+2024-11-22 18:16:23,796 INFO    wandb-upload_36:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp6ianx4cz
+2024-11-22 18:16:23,825 INFO    wandb-upload_11:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp1kgldd7s
+2024-11-22 18:16:23,848 INFO    wandb-upload_53:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp_j6tuk35
+2024-11-22 18:16:23,984 INFO    wandb-upload_23:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpvrjorlo2
+2024-11-22 18:16:24,037 INFO    wandb-upload_22:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpp3qchlnk
+2024-11-22 18:16:24,047 INFO    wandb-upload_48:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbdkivgej
+2024-11-22 18:16:24,066 INFO    wandb-upload_31:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpcspg75_f
+2024-11-22 18:16:24,076 INFO    wandb-upload_17:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpd34l8jlx
+2024-11-22 18:16:24,113 INFO    wandb-upload_3:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmplulviyko
+2024-11-22 18:16:24,182 INFO    wandb-upload_55:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp3wmtv4al
+2024-11-22 18:16:24,224 INFO    wandb-upload_13:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpq1wlbm5w
+2024-11-22 18:16:24,255 INFO    wandb-upload_52:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp1k069z_e
+2024-11-22 18:16:24,274 INFO    wandb-upload_46:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpw0yvmkh0
+2024-11-22 18:16:24,310 INFO    wandb-upload_54:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpn3s2ex8l
+2024-11-22 18:16:24,342 INFO    wandb-upload_21:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpgzj7o8i8
+2024-11-22 18:16:24,357 INFO    wandb-upload_50:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp3h9lkq0r
+2024-11-22 18:16:24,410 INFO    wandb-upload_28:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5kiyhwie
+2024-11-22 18:16:24,436 INFO    wandb-upload_12:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpqf1p2y39
+2024-11-22 18:16:24,440 INFO    wandb-upload_16:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp9gph4k29
+2024-11-22 18:16:24,449 INFO    wandb-upload_41:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpp7ibox2c
+2024-11-22 18:16:24,459 INFO    wandb-upload_8:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5nbkc_1a
+2024-11-22 18:16:24,537 INFO    wandb-upload_43:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp9c9tb80u
+2024-11-22 18:16:24,593 INFO    wandb-upload_47:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpp0qlbxqg
+2024-11-22 18:16:24,594 INFO    wandb-upload_27:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp9edf6opp
+2024-11-22 18:16:24,597 INFO    wandb-upload_59:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpfo2fvnwz
+2024-11-22 18:16:24,600 INFO    wandb-upload_0:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp4sda5er8
+2024-11-22 18:16:24,622 INFO    wandb-upload_5:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpwij6j975
+2024-11-22 18:16:24,626 INFO    wandb-upload_63:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpzwnrvleg
+2024-11-22 18:16:24,679 INFO    wandb-upload_18:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp0b8pp4hd
+2024-11-22 18:16:24,739 INFO    wandb-upload_1:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpw2398p3k
+2024-11-22 18:16:24,866 INFO    wandb-upload_30:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp835cbm_a
+2024-11-22 18:16:25,009 INFO    wandb-upload_40:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5djv4bhw
+2024-11-22 18:16:25,331 INFO    wandb-upload_33:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpxzr9z4qq
+2024-11-22 18:16:25,641 INFO    wandb-upload_24:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp99y2zkge
+2024-11-22 18:16:25,687 INFO    wandb-upload_42:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmje09uag
+2024-11-22 18:16:25,707 INFO    wandb-upload_34:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8f0xdkeh
+2024-11-22 18:16:25,785 INFO    wandb-upload_44:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpzh3qd2g9
+2024-11-22 18:16:25,793 INFO    wandb-upload_39:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpm6mcb4gc
+2024-11-22 18:16:25,876 INFO    wandb-upload_32:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmprycvojz1
+2024-11-22 18:16:25,915 INFO    wandb-upload_14:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpxcd8u76s
+2024-11-22 18:16:25,932 INFO    wandb-upload_10:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpt63y6fr1
+2024-11-22 18:16:25,962 INFO    wandb-upload_57:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp2abs1ddy
+2024-11-22 18:16:25,999 INFO    wandb-upload_20:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpa6_b4eo3
+2024-11-22 18:16:26,007 INFO    wandb-upload_56:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbp41lp52
+2024-11-22 18:16:26,010 INFO    wandb-upload_19:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp78dwl487
+2024-11-22 18:16:26,018 INFO    wandb-upload_62:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpadnihabw
+2024-11-22 18:16:26,101 INFO    wandb-upload_49:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp94o6ixr4
+2024-11-22 18:16:26,102 INFO    wandb-upload_35:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp7uy2v63j
+2024-11-22 18:16:26,207 INFO    wandb-upload_58:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpam513hx1
+2024-11-22 18:16:26,238 INFO    wandb-upload_4:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpldzt0yoz
+2024-11-22 18:16:26,252 INFO    wandb-upload_61:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp041cje2z
+2024-11-22 18:16:26,254 INFO    wandb-upload_7:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp3a919nai
+2024-11-22 18:16:26,299 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: keepalive
+2024-11-22 18:16:26,409 INFO    wandb-upload_60:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8jmwytp6
+2024-11-22 18:16:26,665 INFO    wandb-upload_45:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbuclhq5z
+2024-11-22 18:16:26,676 INFO    wandb-upload_51:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpt2z_7mi5
+2024-11-22 18:16:26,679 INFO    wandb-upload_29:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpzghini4z
+2024-11-22 18:16:26,701 INFO    wandb-upload_26:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp6k7yz_dz
+2024-11-22 18:16:26,709 INFO    wandb-upload_11:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp46ekboyn
+2024-11-22 18:16:26,766 INFO    wandb-upload_38:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp7cq8csi7
+2024-11-22 18:16:26,805 INFO    wandb-upload_6:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpwetysq5o
+2024-11-22 18:16:26,814 INFO    wandb-upload_9:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp1no58smm
+2024-11-22 18:16:26,874 INFO    wandb-upload_50:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp60jny3vs
+2024-11-22 18:16:26,885 INFO    wandb-upload_37:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp7aawto49
+2024-11-22 18:16:27,182 INFO    wandb-upload_15:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpo12sch0g
+2024-11-22 18:16:27,355 INFO    wandb-upload_22:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmphgkfqtk6
+2024-11-22 18:16:27,441 INFO    wandb-upload_13:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp1j33yufa
+2024-11-22 18:16:27,568 INFO    wandb-upload_1:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmphnn82p5h
+2024-11-22 18:16:27,578 INFO    wandb-upload_52:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpnoo6pl28
+2024-11-22 18:16:27,593 INFO    wandb-upload_55:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpvl57elaa
+2024-11-22 18:16:27,594 INFO    wandb-upload_8:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp4r8v5oa9
+2024-11-22 18:16:27,599 INFO    wandb-upload_23:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpyr6z7n79
+2024-11-22 18:16:27,599 INFO    wandb-upload_3:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjtesz2x0
+2024-11-22 18:16:27,642 INFO    wandb-upload_53:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp08tmfml8
+2024-11-22 18:16:27,663 INFO    wandb-upload_31:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpfa87iygl
+2024-11-22 18:16:27,667 INFO    wandb-upload_2:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjhq2s2j4
+2024-11-22 18:16:27,673 INFO    wandb-upload_36:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpgvlavkoj
+2024-11-22 18:16:27,689 INFO    wandb-upload_46:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpxo9myd76
+2024-11-22 18:16:27,733 INFO    wandb-upload_59:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpidavw_od
+2024-11-22 18:16:27,753 INFO    wandb-upload_25:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpxuyes5az
+2024-11-22 18:16:27,794 INFO    wandb-upload_21:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmphs2l3ms5
+2024-11-22 18:16:27,914 INFO    wandb-upload_47:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmptrhkr8ku
+2024-11-22 18:16:27,919 INFO    wandb-upload_48:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpluhdu3wf
+2024-11-22 18:16:27,979 INFO    wandb-upload_54:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpq5kppcpv
+2024-11-22 18:16:28,038 INFO    wandb-upload_28:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp3e41o9uc
+2024-11-22 18:16:28,069 INFO    wandb-upload_12:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpa63cb3to
+2024-11-22 18:16:28,070 INFO    wandb-upload_43:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpufo75c3u
+2024-11-22 18:16:28,081 INFO    wandb-upload_16:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp90740mex
+2024-11-22 18:16:28,113 INFO    wandb-upload_5:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpfmjucd8w
+2024-11-22 18:16:28,142 INFO    wandb-upload_27:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpvu4g9jmf
+2024-11-22 18:16:28,145 INFO    wandb-upload_41:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpuep5urma
+2024-11-22 18:16:28,161 INFO    wandb-upload_40:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp3q5p0egt
+2024-11-22 18:16:28,202 INFO    wandb-upload_63:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp_wleheu6
+2024-11-22 18:16:28,210 INFO    wandb-upload_17:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp21cjute9
+2024-11-22 18:16:28,495 INFO    wandb-upload_30:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmgbj3xrg
+2024-11-22 18:16:28,499 INFO    wandb-upload_62:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpa8w9fbol
+2024-11-22 18:16:28,500 INFO    wandb-upload_39:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpi0b3ejuj
+2024-11-22 18:16:28,520 INFO    wandb-upload_33:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp4bfg8768
+2024-11-22 18:16:28,557 INFO    wandb-upload_0:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5qrw4bqw
+2024-11-22 18:16:28,650 INFO    wandb-upload_18:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8pasaqh8
+2024-11-22 18:16:28,797 INFO    wandb-upload_32:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5ukqo5tv
+2024-11-22 18:16:28,821 INFO    wandb-upload_42:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpwsyusqem
+2024-11-22 18:16:28,824 INFO    wandb-upload_44:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjn2400h8
+2024-11-22 18:16:28,824 INFO    wandb-upload_14:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpe1idez10
+2024-11-22 18:16:28,847 INFO    wandb-upload_19:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpj86fo5pn
+2024-11-22 18:16:28,848 INFO    wandb-upload_24:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpge1_px9i
+2024-11-22 18:16:28,857 INFO    wandb-upload_34:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp_xpz1lyd
+2024-11-22 18:16:28,908 INFO    wandb-upload_20:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpdt43u9e2
+2024-11-22 18:16:28,959 INFO    wandb-upload_56:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmppnqeirke
+2024-11-22 18:16:28,996 INFO    wandb-upload_10:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp3ye_2ekt
+2024-11-22 18:16:29,076 INFO    wandb-upload_57:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5hpolboq
+2024-11-22 18:16:29,189 INFO    wandb-upload_31:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpzsb1leiw
+2024-11-22 18:16:30,075 INFO    wandb-upload_37:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpvv5ka797
+2024-11-22 18:16:30,102 INFO    wandb-upload_59:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp71qx1xn9
+2024-11-22 18:16:30,120 INFO    wandb-upload_13:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpyeaht09p
+2024-11-22 18:16:30,123 INFO    wandb-upload_53:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpvvxtnhjv
+2024-11-22 18:16:30,153 INFO    wandb-upload_1:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpduoydv_g
+2024-11-22 18:16:30,213 INFO    wandb-upload_50:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp0z91lsyc
+2024-11-22 18:16:30,227 INFO    wandb-upload_9:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5v4oqx3l
+2024-11-22 18:16:30,298 INFO    wandb-upload_36:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmplair7221
+2024-11-22 18:16:30,306 INFO    wandb-upload_23:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpfw3d5j5q
+2024-11-22 18:16:30,367 INFO    wandb-upload_3:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8ns43_j3
+2024-11-22 18:16:30,376 INFO    wandb-upload_22:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpqwsy0h0v
+2024-11-22 18:16:30,411 INFO    wandb-upload_11:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpgi37vdfs
+2024-11-22 18:16:30,419 INFO    wandb-upload_60:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpzwn47z8k
+2024-11-22 18:16:30,423 INFO    wandb-upload_2:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp7ge0nosx
+2024-11-22 18:16:30,458 INFO    wandb-upload_46:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpgjxt32pz
+2024-11-22 18:16:30,520 INFO    wandb-upload_45:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbir_k4ht
+2024-11-22 18:16:30,664 INFO    wandb-upload_15:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpolijgdtq
+2024-11-22 18:16:30,777 INFO    wandb-upload_51:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpd8_rx7nm
+2024-11-22 18:16:30,793 INFO    wandb-upload_55:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpq1x0c544
+2024-11-22 18:16:30,954 INFO    wandb-upload_12:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpcw6pkj_i
+2024-11-22 18:16:31,018 INFO    wandb-upload_17:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp_h6ss1wx
+2024-11-22 18:16:31,075 INFO    wandb-upload_28:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbhu0zj6a
+2024-11-22 18:16:31,196 INFO    wandb-upload_52:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmr144shq
+2024-11-22 18:16:31,301 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: keepalive
+2024-11-22 18:16:31,458 INFO    wandb-upload_21:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpic22v7b8
+2024-11-22 18:16:31,469 INFO    wandb-upload_27:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp_er1v9n1
+2024-11-22 18:16:31,473 INFO    wandb-upload_35:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpioyj8jnn
+2024-11-22 18:16:31,627 INFO    wandb-upload_63:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmplakk47qu
+2024-11-22 18:16:31,645 INFO    wandb-upload_7:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmps4orce9r
+2024-11-22 18:16:31,649 INFO    wandb-upload_47:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpp_75uaav
+2024-11-22 18:16:31,666 INFO    wandb-upload_0:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjunxznfm
+2024-11-22 18:16:31,672 INFO    wandb-upload_8:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpqlr3qzwb
+2024-11-22 18:16:31,686 INFO    wandb-upload_38:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmphsol1537
+2024-11-22 18:16:31,827 INFO    wandb-upload_54:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmprnw0g9ui
+2024-11-22 18:16:31,829 INFO    wandb-upload_58:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpe44yh60k
+2024-11-22 18:16:31,862 INFO    wandb-upload_49:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpdjwouabr
+2024-11-22 18:16:31,874 INFO    wandb-upload_41:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpfrut8fue
+2024-11-22 18:16:31,923 INFO    wandb-upload_4:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbohefrdm
+2024-11-22 18:16:31,932 INFO    wandb-upload_61:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpc0qi_cr0
+2024-11-22 18:16:31,946 INFO    wandb-upload_25:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpy3d5xezg
+2024-11-22 18:16:32,112 INFO    wandb-upload_33:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpvaa7vfm2
+2024-11-22 18:16:32,131 INFO    wandb-upload_26:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpnh118v28
+2024-11-22 18:16:32,145 INFO    wandb-upload_30:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpxwi4yg39
+2024-11-22 18:16:32,150 INFO    wandb-upload_62:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpomtmui9f
+2024-11-22 18:16:32,194 INFO    wandb-upload_5:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmn24gb9v
+2024-11-22 18:16:32,209 INFO    wandb-upload_40:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpa8jkkd3u
+2024-11-22 18:16:32,209 INFO    wandb-upload_29:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjj4_4_8b
+2024-11-22 18:16:32,218 INFO    wandb-upload_48:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmuforzfs
+2024-11-22 18:16:32,246 INFO    wandb-upload_18:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpnrqb2q2a
+2024-11-22 18:16:32,265 INFO    wandb-upload_57:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp7cqpleep
+2024-11-22 18:16:32,367 INFO    wandb-upload_16:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp4oaef_h7
+2024-11-22 18:16:32,381 INFO    wandb-upload_6:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpv2795z8_
+2024-11-22 18:16:32,438 INFO    wandb-upload_19:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpob92gqvv
+2024-11-22 18:16:32,522 INFO    wandb-upload_39:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmprff_svtp
+2024-11-22 18:16:32,622 INFO    wandb-upload_14:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpfnuie31b
+2024-11-22 18:16:32,628 INFO    wandb-upload_43:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkpgep3lz
+2024-11-22 18:16:32,743 INFO    wandb-upload_20:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmw3xpbdf
+2024-11-22 18:16:32,791 INFO    wandb-upload_44:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpk38j6vlx
+2024-11-22 18:16:32,898 INFO    wandb-upload_31:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpzflh8d40
+2024-11-22 18:16:32,941 INFO    wandb-upload_24:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmps1nsfxo8
+2024-11-22 18:16:32,948 INFO    wandb-upload_23:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpn_sq7e_o
+2024-11-22 18:16:32,975 INFO    wandb-upload_45:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp7hhrxxhb
+2024-11-22 18:16:33,056 INFO    wandb-upload_42:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmphv5ngpe0
+2024-11-22 18:16:33,080 INFO    wandb-upload_32:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8o7gwegf
+2024-11-22 18:16:33,089 INFO    wandb-upload_34:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpa7w2m28t
+2024-11-22 18:16:33,151 INFO    wandb-upload_10:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpfcnwr_81
+2024-11-22 18:16:33,224 INFO    wandb-upload_2:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpv1jo1f1h
+2024-11-22 18:16:33,229 INFO    wandb-upload_46:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpwb68r9t8
+2024-11-22 18:16:33,279 INFO    wandb-upload_50:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp3f9nub47
+2024-11-22 18:16:33,288 INFO    wandb-upload_56:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpb15oypya
+2024-11-22 18:16:33,487 INFO    wandb-upload_53:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpgjwhf0or
+2024-11-22 18:16:33,519 INFO    wandb-upload_9:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8y6hothk
+2024-11-22 18:16:33,562 INFO    wandb-upload_11:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpr3ropigz
+2024-11-22 18:16:33,775 INFO    wandb-upload_13:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpzwmzqagk
+2024-11-22 18:16:33,870 INFO    wandb-upload_25:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpw5_77o76
+2024-11-22 18:16:33,926 INFO    wandb-upload_21:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpc388t88b
+2024-11-22 18:16:33,976 INFO    wandb-upload_8:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpsgqg0sc3
+2024-11-22 18:16:34,058 INFO    wandb-upload_1:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp2c1n1tyi
+2024-11-22 18:16:34,080 INFO    wandb-upload_60:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp1b9eia41
+2024-11-22 18:16:34,191 INFO    wandb-upload_36:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5cxgww62
+2024-11-22 18:16:34,200 INFO    wandb-upload_41:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpwk0_ympt
+2024-11-22 18:16:34,210 INFO    wandb-upload_51:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpmq4cui7p
+2024-11-22 18:16:34,279 INFO    wandb-upload_38:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpaygt0sir
+2024-11-22 18:16:34,279 INFO    wandb-upload_3:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp7e_s25qx
+2024-11-22 18:16:34,285 INFO    wandb-upload_28:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpplinuc1q
+2024-11-22 18:16:34,311 INFO    wandb-upload_37:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp78sf0rab
+2024-11-22 18:16:34,401 INFO    wandb-upload_4:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp_jfr11p8
+2024-11-22 18:16:34,406 INFO    wandb-upload_12:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpwnrdra44
+2024-11-22 18:16:34,414 INFO    wandb-upload_35:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmps0u1m043
+2024-11-22 18:16:34,415 INFO    wandb-upload_54:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjieiz9d_
+2024-11-22 18:16:34,429 INFO    wandb-upload_61:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpnzq3hg4k
+2024-11-22 18:16:34,432 INFO    wandb-upload_22:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkvmjwp8s
+2024-11-22 18:16:34,464 INFO    wandb-upload_17:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp1bukqnzw
+2024-11-22 18:16:34,473 INFO    wandb-upload_49:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp1hq85ut2
+2024-11-22 18:16:34,531 INFO    wandb-upload_58:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp495v8xkx
+2024-11-22 18:16:34,600 INFO    wandb-upload_27:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp_hmw_5fr
+2024-11-22 18:16:34,807 INFO    wandb-upload_47:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmplrw0mu2y
+2024-11-22 18:16:34,844 INFO    wandb-upload_52:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjhm0u4b0
+2024-11-22 18:16:34,879 INFO    wandb-upload_55:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpu7js6_v2
+2024-11-22 18:16:34,977 INFO    wandb-upload_44:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp9986y4h5
+2024-11-22 18:16:35,087 INFO    wandb-upload_63:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpa6ena_x_
+2024-11-22 18:16:35,192 INFO    wandb-upload_59:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpo5ezi34b
+2024-11-22 18:16:35,224 INFO    wandb-upload_19:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpw047a0i0
+2024-11-22 18:16:35,251 INFO    wandb-upload_7:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpa8nah7r0
+2024-11-22 18:16:35,252 INFO    wandb-upload_29:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpy0il7vio
+2024-11-22 18:16:35,299 INFO    wandb-upload_15:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpczawm0gh
+2024-11-22 18:16:35,388 INFO    wandb-upload_57:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp_mkiq31z
+2024-11-22 18:16:35,417 INFO    wandb-upload_0:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpeglhui0v
+2024-11-22 18:16:35,452 INFO    wandb-upload_48:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp89mkm22r
+2024-11-22 18:16:35,486 INFO    wandb-upload_16:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp3t7stvux
+2024-11-22 18:16:35,557 INFO    wandb-upload_43:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpzqhyvzz5
+2024-11-22 18:16:35,570 INFO    wandb-upload_26:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkiwc85r7
+2024-11-22 18:16:35,644 INFO    wandb-upload_14:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpc_nfpv2p
+2024-11-22 18:16:35,669 INFO    wandb-upload_6:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8n0itmqv
+2024-11-22 18:16:35,681 INFO    wandb-upload_30:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp63qb90xw
+2024-11-22 18:16:35,700 INFO    wandb-upload_33:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpufw0zang
+2024-11-22 18:16:35,700 INFO    wandb-upload_62:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkl6dq0ra
+2024-11-22 18:16:35,764 INFO    wandb-upload_18:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp404penk9
+2024-11-22 18:16:35,938 INFO    wandb-upload_60:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpsauk4st3
+2024-11-22 18:16:36,017 INFO    wandb-upload_41:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp_dsxit6e
+2024-11-22 18:16:36,181 INFO    wandb-upload_50:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpi7i2d4g0
+2024-11-22 18:16:36,203 INFO    wandb-upload_5:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpyu4d0oda
+2024-11-22 18:16:36,303 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: keepalive
+2024-11-22 18:16:36,554 INFO    wandb-upload_24:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpun68fhcn
+2024-11-22 18:16:36,577 INFO    wandb-upload_56:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpoun1o0v8
+2024-11-22 18:16:36,680 INFO    wandb-upload_2:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpqoe_tzj6
+2024-11-22 18:16:36,690 INFO    wandb-upload_39:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpd6lf3vkm
+2024-11-22 18:16:36,721 INFO    wandb-upload_51:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp6riifyng
+2024-11-22 18:16:36,730 INFO    wandb-upload_46:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp7cnna6q7
+2024-11-22 18:16:36,745 INFO    wandb-upload_8:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpn40sh9tm
+2024-11-22 18:16:36,801 INFO    wandb-upload_23:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpeqrh06z7
+2024-11-22 18:16:36,862 INFO    wandb-upload_36:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8g7dc45m
+2024-11-22 18:16:36,867 INFO    wandb-upload_40:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpqvqzmpy8
+2024-11-22 18:16:36,873 INFO    wandb-upload_9:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpd3hb88yq
+2024-11-22 18:16:36,916 INFO    wandb-upload_28:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmphmu797fo
+2024-11-22 18:16:36,917 INFO    wandb-upload_34:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpau69uitg
+2024-11-22 18:16:36,918 INFO    wandb-upload_10:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpvwd6_i55
+2024-11-22 18:16:36,982 INFO    wandb-upload_20:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpwzdzbff_
+2024-11-22 18:16:37,551 INFO    wandb-upload_38:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpznqhxnok
+2024-11-22 18:16:37,616 INFO    wandb-upload_32:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpl6hs0q0f
+2024-11-22 18:16:37,657 INFO    wandb-upload_22:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpytq1yos7
+2024-11-22 18:16:37,705 INFO    wandb-upload_17:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpektjxjt1
+2024-11-22 18:16:37,717 INFO    wandb-upload_3:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpk5f8rj74
+2024-11-22 18:16:37,741 INFO    wandb-upload_27:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp1eqi38en
+2024-11-22 18:16:37,817 INFO    wandb-upload_29:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp2nwcgrsb
+2024-11-22 18:16:37,858 INFO    wandb-upload_7:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpm9pkqfcg
+2024-11-22 18:16:37,937 INFO    wandb-upload_21:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmph7uiqmkr
+2024-11-22 18:16:37,943 INFO    wandb-upload_53:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp62nhhze0
+2024-11-22 18:16:37,980 INFO    wandb-upload_45:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpl64rqiq3
+2024-11-22 18:16:38,006 INFO    wandb-upload_1:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp364eq9e5
+2024-11-22 18:16:38,093 INFO    wandb-upload_35:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8rovzqjc
+2024-11-22 18:16:38,099 INFO    wandb-upload_4:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5knb9vfv
+2024-11-22 18:16:38,116 INFO    wandb-upload_31:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmptnlgcp0l
+2024-11-22 18:16:38,116 INFO    wandb-upload_25:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpgo2hnk_o
+2024-11-22 18:16:38,126 INFO    wandb-upload_52:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbs4m49jf
+2024-11-22 18:16:38,128 INFO    wandb-upload_37:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpc6ljbyj1
+2024-11-22 18:16:38,170 INFO    wandb-upload_54:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkvibe1dx
+2024-11-22 18:16:38,275 INFO    wandb-upload_11:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpdyxuxoke
+2024-11-22 18:16:38,306 INFO    wandb-upload_47:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp6hg7b5p6
+2024-11-22 18:16:38,319 INFO    wandb-upload_44:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpuwgwpfvm
+2024-11-22 18:16:38,360 INFO    wandb-upload_14:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpfq005cxe
+2024-11-22 18:16:38,413 INFO    wandb-upload_48:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpees9zpl_
+2024-11-22 18:16:38,509 INFO    wandb-upload_13:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpow3jqa1q
+2024-11-22 18:16:38,950 INFO    wandb-upload_33:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpg0mouy3r
+2024-11-22 18:16:38,993 INFO    wandb-upload_6:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmptg9o3cv2
+2024-11-22 18:16:39,007 INFO    wandb-upload_19:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpxrl7dr1z
+2024-11-22 18:16:39,046 INFO    wandb-upload_59:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpe1oede9c
+2024-11-22 18:16:39,061 INFO    wandb-upload_43:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp9of_ks5d
+2024-11-22 18:16:39,073 INFO    wandb-upload_61:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpsvlud9ub
+2024-11-22 18:16:39,151 INFO    wandb-upload_0:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpgci5nbub
+2024-11-22 18:16:39,152 INFO    wandb-upload_42:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp41qvgzw5
+2024-11-22 18:16:39,168 INFO    wandb-upload_50:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjhlnja63
+2024-11-22 18:16:39,231 INFO    wandb-upload_55:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpqtjrzdf_
+2024-11-22 18:16:39,309 INFO    wandb-upload_58:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp3d7rwun2
+2024-11-22 18:16:39,406 INFO    wandb-upload_47:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/gtrrb1aa-media/table/chest_recall_table_3_9c452358e1987ebe1d9e.table.json
+2024-11-22 18:16:39,408 INFO    wandb-upload_52:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/cs3154ya-media/table/chest_ROC_table_1_8020e3ee4c47f3cad26e.table.json
+2024-11-22 18:16:39,485 INFO    wandb-upload_54:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/2abp6co6-media/table/chest_tpr_table_3_bb826df84e2915e313ad.table.json
+2024-11-22 18:16:39,505 INFO    wandb-upload_49:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkvekuxv3
+2024-11-22 18:16:39,553 INFO    wandb-upload_41:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpuac_knnb
+2024-11-22 18:16:39,579 INFO    wandb-upload_26:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpqtf4xqrl
+2024-11-22 18:16:39,597 INFO    wandb-upload_10:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmprnfw937q
+2024-11-22 18:16:39,616 INFO    wandb-upload_62:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpuezzjpkd
+2024-11-22 18:16:39,653 INFO    wandb-upload_12:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpos4bz1he
+2024-11-22 18:16:39,686 INFO    wandb-upload_56:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpapgiw086
+2024-11-22 18:16:39,748 INFO    wandb-upload_16:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjkx07dni
+2024-11-22 18:16:39,755 INFO    wandb-upload_37:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/esybg65n-media/table/chest_PR_table_2_96ecf5ea6d9fbf2ee212.table.json
+2024-11-22 18:16:39,758 INFO    wandb-upload_60:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpj3e00sl4
+2024-11-22 18:16:39,834 INFO    wandb-upload_18:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkv0c9aw_
+2024-11-22 18:16:39,845 INFO    wandb-upload_11:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/076cki3x-media/table/chest_precision_table_3_afb51631b1982853d1a5.table.json
+2024-11-22 18:16:39,871 INFO    wandb-upload_57:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpqzawnty3
+2024-11-22 18:16:39,946 INFO    wandb-upload_20:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmprz7uqipj
+2024-11-22 18:16:39,963 INFO    wandb-upload_63:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpiugaii9q
+2024-11-22 18:16:40,005 INFO    wandb-upload_46:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpl6bxvo_t
+2024-11-22 18:16:40,008 INFO    wandb-upload_5:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpkhuk9jrt
+2024-11-22 18:16:40,011 INFO    wandb-upload_40:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpxfkvvzsj
+2024-11-22 18:16:40,062 INFO    wandb-upload_9:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpo7mzg0pe
+2024-11-22 18:16:40,142 INFO    wandb-upload_8:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpxkpylrjr
+2024-11-22 18:16:40,168 INFO    wandb-upload_24:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpb1x2gzgm
+2024-11-22 18:16:40,196 INFO    wandb-upload_23:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpyhbgju37
+2024-11-22 18:16:40,267 INFO    wandb-upload_28:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp23hsntpn
+2024-11-22 18:16:40,283 INFO    wandb-upload_30:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpuwk2pzhj
+2024-11-22 18:16:40,336 INFO    wandb-upload_39:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp2cmd5y14
+2024-11-22 18:16:40,365 INFO    wandb-upload_15:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp63xq7drh
+2024-11-22 18:16:40,377 INFO    wandb-upload_36:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpl9t6s7qv
+2024-11-22 18:16:40,476 INFO    wandb-upload_21:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpj6w7_st5
+2024-11-22 18:16:40,545 INFO    wandb-upload_34:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpcbxi7oxs
+2024-11-22 18:16:40,549 INFO    wandb-upload_7:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp0j0ww1gs
+2024-11-22 18:16:40,607 INFO    wandb-upload_44:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/98gjrjgr-media/table/chest_fpr_table_3_b37990322dceb1bd4246.table.json
+2024-11-22 18:16:40,637 INFO    wandb-upload_51:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp18kg8rbx
+2024-11-22 18:16:40,768 INFO    wandb-upload_45:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp_94ghnwq
+2024-11-22 18:16:40,970 INFO    wandb-upload_35:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp8j1yn5_s
+2024-11-22 18:16:40,993 INFO    wandb-upload_4:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp2zwdz6en
+2024-11-22 18:16:41,017 INFO    wandb-upload_1:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpzfww3spf
+2024-11-22 18:16:41,085 INFO    wandb-upload_29:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbyufn99y
+2024-11-22 18:16:41,118 INFO    wandb-upload_3:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpiunjg8ci
+2024-11-22 18:16:41,124 INFO    wandb-upload_32:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmptyeyd6yu
+2024-11-22 18:16:41,128 INFO    wandb-upload_17:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpwog94dkk
+2024-11-22 18:16:41,129 INFO    wandb-upload_38:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpebspdz59
+2024-11-22 18:16:41,161 INFO    wandb-upload_2:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmppylbl13z
+2024-11-22 18:16:41,189 INFO    wandb-upload_27:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpbdz8os4d
+2024-11-22 18:16:41,305 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: keepalive
+2024-11-22 18:16:41,344 INFO    wandb-upload_22:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpn18fn6zp
+2024-11-22 18:16:41,391 INFO    wandb-upload_31:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmph7oflrgl
+2024-11-22 18:16:41,410 INFO    wandb-upload_53:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjjik5o8j
+2024-11-22 18:16:41,427 INFO    wandb-upload_25:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp6i3_56xr
+2024-11-22 18:16:42,427 INFO    SenderThread:1056943 [sender.py:send_request_log_artifact():1537] logged artifact run-ob4ho9yh-chest_pred - {'id': 'QXJ0aWZhY3Q6MTM0NTg5OTI1Nw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ5ODE0MzU0NQ==', 'latestArtifact': None}}
+2024-11-22 18:16:42,427 DEBUG   SenderThread:1056943 [sender.py:send():391] send: files
+2024-11-22 18:16:42,428 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file media/table/chest_pred_0_e4b74ec2169abcb970d2.table.json with policy now
+2024-11-22 18:16:42,428 DEBUG   SenderThread:1056943 [sender.py:send():391] send: history
+2024-11-22 18:16:42,429 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: summary_record
+2024-11-22 18:16:42,429 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:16:42,430 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-22 18:16:42,433 DEBUG   SenderThread:1056943 [sender.py:send():391] send: config
+2024-11-22 18:16:42,433 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: log_artifact
+2024-11-22 18:16:42,932 INFO    wandb-upload_14:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/lssk2g9x-media/table/chest_pred_0_e4b74ec2169abcb970d2.table.json
+2024-11-22 18:16:43,022 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/wandb-summary.json
+2024-11-22 18:16:43,386 INFO    wandb-upload_13:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpsw_nwif2
+2024-11-22 18:16:44,191 INFO    SenderThread:1056943 [sender.py:send_request_log_artifact():1537] logged artifact run-ob4ho9yh-chest_ROC_table - {'id': 'QXJ0aWZhY3Q6MTM0NTkwMDA3Nw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ5ODE0MzgxMg==', 'latestArtifact': None}}
+2024-11-22 18:16:44,191 DEBUG   SenderThread:1056943 [sender.py:send():391] send: files
+2024-11-22 18:16:44,192 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file media/table/chest_ROC_table_1_8020e3ee4c47f3cad26e.table.json with policy now
+2024-11-22 18:16:44,193 DEBUG   SenderThread:1056943 [sender.py:send():391] send: history
+2024-11-22 18:16:44,193 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: summary_record
+2024-11-22 18:16:44,194 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-22 18:16:44,195 DEBUG   SenderThread:1056943 [sender.py:send():391] send: config
+2024-11-22 18:16:44,195 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: log_artifact
+2024-11-22 18:16:44,789 INFO    wandb-upload_6:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/92a9rzp6-media/table/chest_ROC_table_1_8020e3ee4c47f3cad26e.table.json
+2024-11-22 18:16:45,024 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/wandb-summary.json
+2024-11-22 18:16:45,045 INFO    wandb-upload_59:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmplaxgd24w
+2024-11-22 18:16:45,733 INFO    SenderThread:1056943 [sender.py:send_request_log_artifact():1537] logged artifact run-ob4ho9yh-chest_PR_table - {'id': 'QXJ0aWZhY3Q6MTM0NTkwMDEwOA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ5ODE0MzgyMA==', 'latestArtifact': None}}
+2024-11-22 18:16:45,733 DEBUG   SenderThread:1056943 [sender.py:send():391] send: files
+2024-11-22 18:16:45,733 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file media/table/chest_PR_table_2_96ecf5ea6d9fbf2ee212.table.json with policy now
+2024-11-22 18:16:45,734 DEBUG   SenderThread:1056943 [sender.py:send():391] send: history
+2024-11-22 18:16:45,735 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: summary_record
+2024-11-22 18:16:45,736 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-22 18:16:45,736 DEBUG   SenderThread:1056943 [sender.py:send():391] send: config
+2024-11-22 18:16:45,737 DEBUG   SenderThread:1056943 [sender.py:send():391] send: config
+2024-11-22 18:16:45,737 DEBUG   SenderThread:1056943 [sender.py:send():391] send: config
+2024-11-22 18:16:45,737 DEBUG   SenderThread:1056943 [sender.py:send():391] send: config
+2024-11-22 18:16:45,737 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: log_artifact
+2024-11-22 18:16:46,024 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/wandb-summary.json
+2024-11-22 18:16:46,186 INFO    wandb-upload_61:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/90nd1381-media/table/chest_PR_table_2_96ecf5ea6d9fbf2ee212.table.json
+2024-11-22 18:16:46,307 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: keepalive
+2024-11-22 18:16:46,859 INFO    wandb-upload_42:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp19mhy5cv
+2024-11-22 18:16:47,562 INFO    SenderThread:1056943 [sender.py:send_request_log_artifact():1537] logged artifact run-ob4ho9yh-chest_recall_table - {'id': 'QXJ0aWZhY3Q6MTM0NTkwMDE0MQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ5ODE0MzgyNQ==', 'latestArtifact': None}}
+2024-11-22 18:16:47,562 DEBUG   SenderThread:1056943 [sender.py:send():391] send: files
+2024-11-22 18:16:47,563 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file media/table/chest_recall_table_3_9c452358e1987ebe1d9e.table.json with policy now
+2024-11-22 18:16:47,563 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:16:47,564 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: log_artifact
+2024-11-22 18:16:48,046 INFO    wandb-upload_55:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/a5npqkzs-media/table/chest_recall_table_3_9c452358e1987ebe1d9e.table.json
+2024-11-22 18:16:48,723 INFO    wandb-upload_47:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpjklvptb7
+2024-11-22 18:16:49,441 INFO    SenderThread:1056943 [sender.py:send_request_log_artifact():1537] logged artifact run-ob4ho9yh-chest_precision_table - {'id': 'QXJ0aWZhY3Q6MTM0NTkwMDE3OQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ5ODE0MzgzNA==', 'latestArtifact': None}}
+2024-11-22 18:16:49,442 DEBUG   SenderThread:1056943 [sender.py:send():391] send: files
+2024-11-22 18:16:49,442 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file media/table/chest_precision_table_3_afb51631b1982853d1a5.table.json with policy now
+2024-11-22 18:16:49,442 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: log_artifact
+2024-11-22 18:16:49,942 INFO    wandb-upload_54:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/3lr0oq2a-media/table/chest_precision_table_3_afb51631b1982853d1a5.table.json
+2024-11-22 18:16:50,356 INFO    wandb-upload_41:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmp5yydke1n
+2024-11-22 18:16:51,148 INFO    SenderThread:1056943 [sender.py:send_request_log_artifact():1537] logged artifact run-ob4ho9yh-chest_tpr_table - {'id': 'QXJ0aWZhY3Q6MTM0NTkwMDIxNw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ5ODE0MzgzOQ==', 'latestArtifact': None}}
+2024-11-22 18:16:51,148 DEBUG   SenderThread:1056943 [sender.py:send():391] send: files
+2024-11-22 18:16:51,148 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file media/table/chest_tpr_table_3_bb826df84e2915e313ad.table.json with policy now
+2024-11-22 18:16:51,149 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: log_artifact
+2024-11-22 18:16:51,309 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: keepalive
+2024-11-22 18:16:51,649 INFO    wandb-upload_10:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/l0sc2ys0-media/table/chest_tpr_table_3_bb826df84e2915e313ad.table.json
+2024-11-22 18:16:52,046 INFO    wandb-upload_12:1056943 [upload_job.py:push():88] Uploaded file /home/zeddo123/.local/share/wandb/artifacts/staging/tmpksixaory
+2024-11-22 18:16:52,827 INFO    SenderThread:1056943 [sender.py:send_request_log_artifact():1537] logged artifact run-ob4ho9yh-chest_fpr_table - {'id': 'QXJ0aWZhY3Q6MTM0NTkwMDI0NQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQ5ODE0Mzg0NA==', 'latestArtifact': None}}
+2024-11-22 18:16:52,827 DEBUG   SenderThread:1056943 [sender.py:send():391] send: files
+2024-11-22 18:16:52,828 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file media/table/chest_fpr_table_3_b37990322dceb1bd4246.table.json with policy now
+2024-11-22 18:16:52,828 DEBUG   SenderThread:1056943 [sender.py:send():391] send: history
+2024-11-22 18:16:52,829 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: summary_record
+2024-11-22 18:16:52,832 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:16:52,833 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-22 18:16:52,834 DEBUG   SenderThread:1056943 [sender.py:send():391] send: exit
+2024-11-22 18:16:52,834 INFO    SenderThread:1056943 [sender.py:send_exit():598] handling exit code: 0
+2024-11-22 18:16:52,834 INFO    SenderThread:1056943 [sender.py:send_exit():600] handling runtime: 67
+2024-11-22 18:16:52,835 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-22 18:16:52,835 INFO    SenderThread:1056943 [sender.py:send_exit():606] send defer
+2024-11-22 18:16:52,835 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: poll_exit
+2024-11-22 18:16:52,836 DEBUG   SenderThread:1056943 [sender.py:send():391] send: stats
+2024-11-22 18:16:52,836 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:52,837 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 0
+2024-11-22 18:16:52,840 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:52,840 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-11-22 18:16:52,840 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 1
+2024-11-22 18:16:52,840 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:52,840 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 1
+2024-11-22 18:16:52,841 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:52,841 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-11-22 18:16:52,841 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 2
+2024-11-22 18:16:52,841 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:52,841 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 2
+2024-11-22 18:16:52,841 INFO    HandlerThread:1056943 [system_monitor.py:finish():203] Stopping system monitor
+2024-11-22 18:16:52,841 DEBUG   SystemMonitor:1056943 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-11-22 18:16:52,842 DEBUG   SystemMonitor:1056943 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-11-22 18:16:52,844 INFO    HandlerThread:1056943 [interfaces.py:finish():200] Joined cpu monitor
+2024-11-22 18:16:52,844 INFO    HandlerThread:1056943 [interfaces.py:finish():200] Joined disk monitor
+2024-11-22 18:16:52,879 INFO    HandlerThread:1056943 [interfaces.py:finish():200] Joined gpu monitor
+2024-11-22 18:16:52,879 INFO    HandlerThread:1056943 [interfaces.py:finish():200] Joined memory monitor
+2024-11-22 18:16:52,879 INFO    HandlerThread:1056943 [interfaces.py:finish():200] Joined network monitor
+2024-11-22 18:16:52,879 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:52,879 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-11-22 18:16:52,879 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 3
+2024-11-22 18:16:52,879 DEBUG   SenderThread:1056943 [sender.py:send():391] send: stats
+2024-11-22 18:16:52,880 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:52,880 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 3
+2024-11-22 18:16:52,880 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:52,880 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-11-22 18:16:52,880 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 4
+2024-11-22 18:16:52,880 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:52,880 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 4
+2024-11-22 18:16:52,880 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:52,880 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-11-22 18:16:52,880 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 5
+2024-11-22 18:16:52,880 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:52,880 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 5
+2024-11-22 18:16:52,880 DEBUG   SenderThread:1056943 [sender.py:send():391] send: summary
+2024-11-22 18:16:52,880 INFO    SenderThread:1056943 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-22 18:16:52,880 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:52,880 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-11-22 18:16:52,880 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 6
+2024-11-22 18:16:52,881 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:52,881 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 6
+2024-11-22 18:16:52,881 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:52,881 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-11-22 18:16:52,882 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:16:53,028 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/wandb-summary.json
+2024-11-22 18:16:53,077 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 7
+2024-11-22 18:16:53,077 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:53,077 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 7
+2024-11-22 18:16:53,078 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:53,078 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-11-22 18:16:53,296 INFO    wandb-upload_16:1056943 [upload_job.py:push():130] Uploaded file /tmp/tmpn5j48sg1wandb/1v3qb29k-media/table/chest_fpr_table_3_b37990322dceb1bd4246.table.json
+2024-11-22 18:16:53,310 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-22 18:16:54,029 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/config.yaml
+2024-11-22 18:16:55,124 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 8
+2024-11-22 18:16:55,124 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: poll_exit
+2024-11-22 18:16:55,125 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:55,125 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 8
+2024-11-22 18:16:55,126 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:55,126 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-11-22 18:16:55,126 INFO    SenderThread:1056943 [job_builder.py:build():443] Attempting to build job artifact
+2024-11-22 18:16:55,127 INFO    SenderThread:1056943 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-11-22 18:16:55,131 INFO    SenderThread:1056943 [job_builder.py:build():548] adding wandb-job metadata file
+2024-11-22 18:16:55,138 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 9
+2024-11-22 18:16:55,139 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:55,139 DEBUG   SenderThread:1056943 [sender.py:send():391] send: artifact
+2024-11-22 18:16:55,139 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 9
+2024-11-22 18:16:55,312 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-22 18:16:55,929 INFO    wandb-upload_60:1056943 [upload_job.py:push():85] Skipped uploading /home/zeddo123/.local/share/wandb/artifacts/staging/tmp01y0846l
+2024-11-22 18:16:56,030 INFO    Thread-12 :1056943 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:16:56,146 INFO    wandb-upload_18:1056943 [upload_job.py:push():88] Uploaded file /tmp/tmpqy48m14p/wandb-job.json
+2024-11-22 18:16:57,210 INFO    SenderThread:1056943 [sender.py:send_artifact():1549] sent artifact job-https___github.com_hq-deng_RD4AD_easy_train.py - {'id': 'QXJ0aWZhY3Q6MTM0NTkwMDMyOQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxNTg4MTI4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTM0NTg4ODcyNg==', 'versionIndex': 13}}}
+2024-11-22 18:16:57,210 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:57,210 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-11-22 18:16:57,210 INFO    SenderThread:1056943 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-11-22 18:16:58,032 INFO    SenderThread:1056943 [dir_watcher.py:finish():388] scan: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files
+2024-11-22 18:16:58,032 INFO    SenderThread:1056943 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/config.yaml config.yaml
+2024-11-22 18:16:58,033 INFO    SenderThread:1056943 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log output.log
+2024-11-22 18:16:58,033 INFO    SenderThread:1056943 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/wandb-metadata.json wandb-metadata.json
+2024-11-22 18:16:58,033 INFO    SenderThread:1056943 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/requirements.txt requirements.txt
+2024-11-22 18:16:58,033 INFO    SenderThread:1056943 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/wandb-summary.json wandb-summary.json
+2024-11-22 18:16:58,041 INFO    SenderThread:1056943 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_PR_table_2_96ecf5ea6d9fbf2ee212.table.json media/table/chest_PR_table_2_96ecf5ea6d9fbf2ee212.table.json
+2024-11-22 18:16:58,041 INFO    SenderThread:1056943 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_recall_table_3_9c452358e1987ebe1d9e.table.json media/table/chest_recall_table_3_9c452358e1987ebe1d9e.table.json
+2024-11-22 18:16:58,041 INFO    SenderThread:1056943 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_fpr_table_3_b37990322dceb1bd4246.table.json media/table/chest_fpr_table_3_b37990322dceb1bd4246.table.json
+2024-11-22 18:16:58,041 INFO    SenderThread:1056943 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_tpr_table_3_bb826df84e2915e313ad.table.json media/table/chest_tpr_table_3_bb826df84e2915e313ad.table.json
+2024-11-22 18:16:58,041 INFO    SenderThread:1056943 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_pred_0_e4b74ec2169abcb970d2.table.json media/table/chest_pred_0_e4b74ec2169abcb970d2.table.json
+2024-11-22 18:16:58,041 INFO    SenderThread:1056943 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_ROC_table_1_8020e3ee4c47f3cad26e.table.json media/table/chest_ROC_table_1_8020e3ee4c47f3cad26e.table.json
+2024-11-22 18:16:58,041 INFO    SenderThread:1056943 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/media/table/chest_precision_table_3_afb51631b1982853d1a5.table.json media/table/chest_precision_table_3_afb51631b1982853d1a5.table.json
+2024-11-22 18:16:58,042 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 10
+2024-11-22 18:16:58,042 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: poll_exit
+2024-11-22 18:16:58,049 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:58,049 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 10
+2024-11-22 18:16:58,050 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:16:58,051 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:58,051 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-11-22 18:16:58,051 INFO    SenderThread:1056943 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-22 18:16:58,314 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-22 18:16:58,315 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: poll_exit
+2024-11-22 18:16:58,435 INFO    wandb-upload_20:1056943 [upload_job.py:push():130] Uploaded file /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/output.log
+2024-11-22 18:16:58,436 INFO    wandb-upload_46:1056943 [upload_job.py:push():130] Uploaded file /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/requirements.txt
+2024-11-22 18:16:58,450 INFO    wandb-upload_57:1056943 [upload_job.py:push():130] Uploaded file /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/config.yaml
+2024-11-22 18:16:58,461 INFO    wandb-upload_5:1056943 [upload_job.py:push():130] Uploaded file /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/files/wandb-summary.json
+2024-11-22 18:16:58,661 INFO    Thread-11 (_thread_body):1056943 [sender.py:transition_state():626] send defer: 11
+2024-11-22 18:16:58,662 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:58,662 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 11
+2024-11-22 18:16:58,663 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:58,664 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-11-22 18:16:58,664 INFO    SenderThread:1056943 [file_pusher.py:join():175] waiting for file pusher
+2024-11-22 18:16:58,674 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 12
+2024-11-22 18:16:58,674 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:58,674 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 12
+2024-11-22 18:16:58,675 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:58,675 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-11-22 18:16:58,675 INFO    SenderThread:1056943 [file_stream.py:finish():601] file stream finish called
+2024-11-22 18:16:59,232 INFO    SenderThread:1056943 [file_stream.py:finish():605] file stream finish is done
+2024-11-22 18:16:59,233 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 13
+2024-11-22 18:16:59,233 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:59,233 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 13
+2024-11-22 18:16:59,233 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:59,234 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-11-22 18:16:59,234 INFO    SenderThread:1056943 [sender.py:transition_state():626] send defer: 14
+2024-11-22 18:16:59,234 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:16:59,234 INFO    HandlerThread:1056943 [handler.py:handle_request_defer():184] handle defer: 14
+2024-11-22 18:16:59,235 DEBUG   SenderThread:1056943 [sender.py:send():391] send: final
+2024-11-22 18:16:59,235 DEBUG   SenderThread:1056943 [sender.py:send():391] send: footer
+2024-11-22 18:16:59,235 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:16:59,235 INFO    SenderThread:1056943 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-11-22 18:16:59,236 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-22 18:16:59,236 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: server_info
+2024-11-22 18:16:59,237 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-22 18:16:59,237 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: get_summary
+2024-11-22 18:16:59,238 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: sampled_history
+2024-11-22 18:16:59,239 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: poll_exit
+2024-11-22 18:16:59,239 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:16:59,240 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: server_info
+2024-11-22 18:16:59,386 DEBUG   SenderThread:1056943 [sender.py:send_request():418] send_request: poll_exit
+2024-11-22 18:16:59,387 INFO    MainThread:1056943 [wandb_run.py:_footer_history_summary_info():4076] rendering history
+2024-11-22 18:16:59,388 INFO    MainThread:1056943 [wandb_run.py:_footer_history_summary_info():4108] rendering summary
+2024-11-22 18:16:59,388 INFO    MainThread:1056943 [wandb_run.py:_footer_sync_info():4035] logging synced files
+2024-11-22 18:16:59,389 DEBUG   HandlerThread:1056943 [handler.py:handle_request():158] handle_request: shutdown
+2024-11-22 18:16:59,389 INFO    HandlerThread:1056943 [handler.py:finish():880] shutting down handler
+2024-11-22 18:17:00,239 INFO    WriterThread:1056943 [datastore.py:close():296] close: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181507-ob4ho9yh/run-ob4ho9yh.wandb
+2024-11-22 18:17:00,387 INFO    SenderThread:1056943 [sender.py:finish():1631] shutting down sender
+2024-11-22 18:17:00,387 INFO    SenderThread:1056943 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-22 18:17:00,387 INFO    SenderThread:1056943 [file_pusher.py:join():175] waiting for file pusher

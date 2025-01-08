@@ -1,0 +1,244 @@
+wandb_version: 1
+
+dataset_name:
+  desc: null
+  value: riseholme
+dataset_path:
+  desc: null
+  value: ../datasets/riseholme_mvtec
+epochs:
+  desc: null
+  value: 100
+learning_rate:
+  desc: null
+  value: 0.005
+batch_size:
+  desc: null
+  value: 10
+image_size:
+  desc: null
+  value: 256
+run:
+  desc: null
+  value: training
+model:
+  desc: null
+  value: RD4AD
+device:
+  desc: null
+  value: 0
+_wandb:
+  desc: null
+  value:
+    python_version: 3.12.3
+    cli_version: 0.17.7
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1732299616
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      3:
+      - 1
+      - 16
+      - 23
+      - 61
+      4: 3.12.3
+      5: 0.17.7
+      8:
+      - 5
+      13: linux-x86_64
+    visualize:
+      strawberry_ROC:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: strawberry_ROC_table
+                fields: []
+      strawberry_PR:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: recall
+            y: precision
+            class: class
+          stringSettings:
+            title: Precision v. Recall
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: strawberry_PR_table
+                fields: []
+      strawberry_fpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: fpr
+            stroke: null
+          stringSettings:
+            title: strawberry False positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: strawberry_fpr_table
+                fields: []
+      strawberry_tpr:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: tpr
+            stroke: null
+          stringSettings:
+            title: strawberry True positive rate curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: strawberry_tpr_table
+                fields: []
+      strawberry_precision:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: precision
+            stroke: null
+          stringSettings:
+            title: strawberry Precisison curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: strawberry_precision_table
+                fields: []
+      strawberry_recall:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/line/v0
+          fieldSettings:
+            x: threshold
+            y: recall
+            stroke: null
+          stringSettings:
+            title: strawberry Recall curve
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: strawberry_recall_table
+                fields: []

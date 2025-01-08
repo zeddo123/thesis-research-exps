@@ -1,0 +1,303 @@
+2024-11-22 18:12:43,238 INFO    StreamThr :1056582 [internal.py:wandb_internal():85] W&B internal server running at pid: 1056582, started at: 2024-11-22 18:12:43.237750
+2024-11-22 18:12:43,239 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status
+2024-11-22 18:12:43,241 INFO    WriterThread:1056582 [datastore.py:open_for_write():87] open: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/run-2tm3g62x.wandb
+2024-11-22 18:12:43,242 DEBUG   SenderThread:1056582 [sender.py:send():391] send: header
+2024-11-22 18:12:43,242 DEBUG   SenderThread:1056582 [sender.py:send():391] send: run
+2024-11-22 18:12:43,688 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: check_version
+2024-11-22 18:12:43,688 INFO    SenderThread:1056582 [dir_watcher.py:__init__():211] watching files in: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files
+2024-11-22 18:12:43,689 INFO    SenderThread:1056582 [sender.py:_start_run_threads():1200] run started: 2tm3g62x with start time 1732299163.237576
+2024-11-22 18:12:43,689 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: check_version
+2024-11-22 18:12:43,795 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: run_start
+2024-11-22 18:12:43,805 DEBUG   HandlerThread:1056582 [system_info.py:__init__():26] System info init
+2024-11-22 18:12:43,805 DEBUG   HandlerThread:1056582 [system_info.py:__init__():41] System info init done
+2024-11-22 18:12:43,805 INFO    HandlerThread:1056582 [system_monitor.py:start():194] Starting system monitor
+2024-11-22 18:12:43,805 INFO    SystemMonitor:1056582 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-11-22 18:12:43,805 INFO    HandlerThread:1056582 [system_monitor.py:probe():214] Collecting system info
+2024-11-22 18:12:43,806 INFO    SystemMonitor:1056582 [interfaces.py:start():188] Started cpu monitoring
+2024-11-22 18:12:43,807 INFO    SystemMonitor:1056582 [interfaces.py:start():188] Started disk monitoring
+2024-11-22 18:12:43,809 INFO    SystemMonitor:1056582 [interfaces.py:start():188] Started gpu monitoring
+2024-11-22 18:12:43,811 INFO    SystemMonitor:1056582 [interfaces.py:start():188] Started memory monitoring
+2024-11-22 18:12:43,812 INFO    SystemMonitor:1056582 [interfaces.py:start():188] Started network monitoring
+2024-11-22 18:12:43,825 DEBUG   HandlerThread:1056582 [system_info.py:probe():152] Probing system
+2024-11-22 18:12:43,827 DEBUG   HandlerThread:1056582 [system_info.py:_probe_git():137] Probing git
+2024-11-22 18:12:43,837 DEBUG   HandlerThread:1056582 [system_info.py:_probe_git():145] Probing git done
+2024-11-22 18:12:43,837 DEBUG   HandlerThread:1056582 [system_info.py:probe():200] Probing system done
+2024-11-22 18:12:43,837 DEBUG   HandlerThread:1056582 [system_monitor.py:probe():223] {'os': 'Linux-6.8.0-1017-nvidia-x86_64-with-glibc2.39', 'python': '3.12.3', 'heartbeatAt': '2024-11-22T18:12:43.826000', 'startedAt': '2024-11-22T18:12:43.232884', 'docker': None, 'cuda': None, 'args': ('-dn', 'chexpert', '-dp', '../datasets/chexpert_mvtec', '-e', '1', '-bs', '30'), 'state': 'running', 'program': '/home/zeddo123/anom/RD4AD/easy_train.py', 'codePathLocal': 'easy_train.py', 'codePath': 'easy_train.py', 'git': {'remote': 'https://github.com/hq-deng/RD4AD', 'commit': '6554076872c65f8784f6ece8cfb39ce77e1aee12'}, 'email': None, 'root': '/home/zeddo123/anom/RD4AD', 'host': '9arnita', 'username': 'zeddo123', 'executable': '/home/zeddo123/anom/RD4AD/venv/bin/python', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 984.427, 'min': 800.0, 'max': 5087.5}, 'cpu_freq_per_core': [{'current': 3589.842, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 1260.619, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 1300.0, 'min': 800.0, 'max': 5700.0}, {'current': 1277.831, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 5158.878, 'min': 800.0, 'max': 6000.0}, {'current': 800.0, 'min': 800.0, 'max': 6000.0}, {'current': 1298.045, 'min': 800.0, 'max': 6000.0}, {'current': 800.0, 'min': 800.0, 'max': 6000.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 800.0, 'min': 800.0, 'max': 5700.0}, {'current': 1114.076, 'min': 800.0, 'max': 5700.0}, {'current': 1300.254, 'min': 800.0, 'max': 5700.0}, {'current': 1323.842, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 1307.589, 'min': 800.0, 'max': 4400.0}, {'current': 800.171, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 3972.732, 'min': 800.0, 'max': 4400.0}, {'current': 949.156, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 1286.926, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}, {'current': 800.0, 'min': 800.0, 'max': 4400.0}], 'disk': {'/': {'total': 914.7823104858398, 'used': 789.9351959228516}}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 62.56636047363281}}
+2024-11-22 18:12:43,838 INFO    HandlerThread:1056582 [system_monitor.py:probe():224] Finished collecting system info
+2024-11-22 18:12:43,838 INFO    HandlerThread:1056582 [system_monitor.py:probe():227] Publishing system info
+2024-11-22 18:12:43,838 INFO    HandlerThread:1056582 [system_monitor.py:probe():229] Finished publishing system info
+2024-11-22 18:12:43,846 DEBUG   SenderThread:1056582 [sender.py:send():391] send: files
+2024-11-22 18:12:43,846 INFO    SenderThread:1056582 [sender.py:_save_file():1466] saving file wandb-metadata.json with policy now
+2024-11-22 18:12:43,876 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: python_packages
+2024-11-22 18:12:43,876 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: python_packages
+2024-11-22 18:12:43,876 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-22 18:12:43,876 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: stop_status
+2024-11-22 18:12:43,877 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:44,143 DEBUG   SenderThread:1056582 [sender.py:send():391] send: telemetry
+2024-11-22 18:12:44,502 INFO    wandb-upload_0:1056582 [upload_job.py:push():130] Uploaded file /tmp/tmptb4l3q9twandb/1ltel94v-wandb-metadata.json
+2024-11-22 18:12:44,688 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/requirements.txt
+2024-11-22 18:12:44,688 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:12:44,688 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/wandb-metadata.json
+2024-11-22 18:12:44,877 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:44,890 DEBUG   SenderThread:1056582 [sender.py:send():391] send: telemetry
+2024-11-22 18:12:45,877 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:46,688 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:12:46,877 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:47,688 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:12:47,877 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:48,396 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:12:48,877 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:49,689 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:12:49,878 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:50,878 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:51,689 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:12:51,878 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:52,878 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:53,541 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:12:53,690 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:12:53,878 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:54,878 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:55,690 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:12:55,879 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:56,879 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:57,690 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:12:57,879 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:58,574 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:12:58,877 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-22 18:12:58,877 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: stop_status
+2024-11-22 18:12:58,879 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:12:59,691 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:12:59,879 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:00,879 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:01,691 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:01,879 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:02,879 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:03,692 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:03,757 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:13:03,880 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:04,880 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:05,692 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:05,880 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:06,880 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:07,692 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:07,880 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:08,873 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:13:08,880 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:09,693 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:09,881 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:10,881 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:11,693 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:11,881 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:12,881 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:13,694 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:13,877 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-22 18:13:13,877 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: stop_status
+2024-11-22 18:13:13,881 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:14,131 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:13:14,694 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/config.yaml
+2024-11-22 18:13:14,881 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:15,694 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:15,881 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:16,070 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: partial_history
+2024-11-22 18:13:16,070 DEBUG   SenderThread:1056582 [sender.py:send():391] send: telemetry
+2024-11-22 18:13:16,881 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:17,694 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:17,881 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:18,881 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:19,373 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:13:19,694 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:19,881 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:20,881 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:21,695 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:21,882 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:22,882 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:23,695 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:23,882 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:24,498 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:13:24,882 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:25,696 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:25,882 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:26,882 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:27,696 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:27,882 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:28,877 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-22 18:13:28,877 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: stop_status
+2024-11-22 18:13:28,882 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:29,530 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:13:29,696 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:29,882 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:30,882 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:31,697 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:31,882 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:32,883 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:33,697 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:33,883 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:34,638 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:13:34,883 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:35,698 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:35,883 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:36,883 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:37,698 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:37,883 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:38,883 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:39,667 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:13:39,698 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:39,883 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:40,885 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:41,699 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:41,885 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:43,108 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:43,699 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:43,812 DEBUG   SystemMonitor:1056582 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-11-22 18:13:43,813 DEBUG   SenderThread:1056582 [sender.py:send():391] send: stats
+2024-11-22 18:13:44,180 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: stop_status
+2024-11-22 18:13:44,180 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:44,180 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: stop_status
+2024-11-22 18:13:45,375 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:45,439 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:13:45,700 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:45,700 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/config.yaml
+2024-11-22 18:13:46,375 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:46,508 DEBUG   SenderThread:1056582 [sender.py:send():391] send: exit
+2024-11-22 18:13:46,508 INFO    SenderThread:1056582 [sender.py:send_exit():598] handling exit code: 1
+2024-11-22 18:13:46,508 INFO    SenderThread:1056582 [sender.py:send_exit():600] handling runtime: 62
+2024-11-22 18:13:46,509 INFO    SenderThread:1056582 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-22 18:13:46,509 INFO    SenderThread:1056582 [sender.py:send_exit():606] send defer
+2024-11-22 18:13:46,509 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:46,509 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 0
+2024-11-22 18:13:46,510 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:46,510 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 0
+2024-11-22 18:13:46,510 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 1
+2024-11-22 18:13:46,510 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:46,510 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 1
+2024-11-22 18:13:46,511 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:46,511 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 1
+2024-11-22 18:13:46,511 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 2
+2024-11-22 18:13:46,511 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:46,511 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 2
+2024-11-22 18:13:46,511 INFO    HandlerThread:1056582 [system_monitor.py:finish():203] Stopping system monitor
+2024-11-22 18:13:46,511 DEBUG   SystemMonitor:1056582 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-11-22 18:13:46,513 DEBUG   SystemMonitor:1056582 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-11-22 18:13:46,514 INFO    HandlerThread:1056582 [interfaces.py:finish():200] Joined cpu monitor
+2024-11-22 18:13:46,515 INFO    HandlerThread:1056582 [interfaces.py:finish():200] Joined disk monitor
+2024-11-22 18:13:46,549 INFO    HandlerThread:1056582 [interfaces.py:finish():200] Joined gpu monitor
+2024-11-22 18:13:46,549 INFO    HandlerThread:1056582 [interfaces.py:finish():200] Joined memory monitor
+2024-11-22 18:13:46,549 INFO    HandlerThread:1056582 [interfaces.py:finish():200] Joined network monitor
+2024-11-22 18:13:46,549 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:46,549 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 2
+2024-11-22 18:13:46,549 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 3
+2024-11-22 18:13:46,549 DEBUG   SenderThread:1056582 [sender.py:send():391] send: stats
+2024-11-22 18:13:46,549 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:46,549 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 3
+2024-11-22 18:13:46,549 DEBUG   SenderThread:1056582 [sender.py:send():391] send: history
+2024-11-22 18:13:46,549 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: summary_record
+2024-11-22 18:13:46,550 INFO    SenderThread:1056582 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-22 18:13:46,550 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:46,550 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 3
+2024-11-22 18:13:46,550 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 4
+2024-11-22 18:13:46,550 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:46,550 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 4
+2024-11-22 18:13:46,550 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:46,550 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 4
+2024-11-22 18:13:46,550 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 5
+2024-11-22 18:13:46,550 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:46,550 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 5
+2024-11-22 18:13:46,550 DEBUG   SenderThread:1056582 [sender.py:send():391] send: summary
+2024-11-22 18:13:46,550 INFO    SenderThread:1056582 [sender.py:_save_file():1466] saving file wandb-summary.json with policy end
+2024-11-22 18:13:46,550 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:46,550 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 5
+2024-11-22 18:13:46,550 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 6
+2024-11-22 18:13:46,550 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:46,550 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 6
+2024-11-22 18:13:46,550 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:46,550 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 6
+2024-11-22 18:13:46,551 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 7
+2024-11-22 18:13:46,551 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: status_report
+2024-11-22 18:13:46,551 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:46,551 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 7
+2024-11-22 18:13:46,551 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:46,551 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 7
+2024-11-22 18:13:46,700 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/wandb-summary.json
+2024-11-22 18:13:47,507 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-22 18:13:47,701 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:48,947 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 8
+2024-11-22 18:13:48,947 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: poll_exit
+2024-11-22 18:13:48,948 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:48,948 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 8
+2024-11-22 18:13:48,948 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:48,948 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 8
+2024-11-22 18:13:48,948 INFO    SenderThread:1056582 [job_builder.py:build():443] Attempting to build job artifact
+2024-11-22 18:13:48,949 INFO    SenderThread:1056582 [job_builder.py:_get_source_type():572] is repo sourced job
+2024-11-22 18:13:48,974 INFO    SenderThread:1056582 [job_builder.py:build():548] adding wandb-job metadata file
+2024-11-22 18:13:49,005 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 9
+2024-11-22 18:13:49,006 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:49,006 DEBUG   SenderThread:1056582 [sender.py:send():391] send: artifact
+2024-11-22 18:13:49,006 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 9
+2024-11-22 18:13:49,508 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-22 18:13:49,702 INFO    Thread-12 :1056582 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:49,814 INFO    SenderThread:1056582 [sender.py:send_artifact():1549] sent artifact job-https___github.com_hq-deng_RD4AD_easy_train.py - {'id': 'QXJ0aWZhY3Q6MTM0NTg1MDgzNA==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxNTg4MTI4Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTM0NTg4ODcyNg==', 'versionIndex': 13}}}
+2024-11-22 18:13:49,814 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:49,814 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 9
+2024-11-22 18:13:49,814 INFO    SenderThread:1056582 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-11-22 18:13:50,703 INFO    SenderThread:1056582 [dir_watcher.py:finish():388] scan: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files
+2024-11-22 18:13:50,704 INFO    SenderThread:1056582 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/config.yaml config.yaml
+2024-11-22 18:13:50,704 INFO    SenderThread:1056582 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log output.log
+2024-11-22 18:13:50,704 INFO    SenderThread:1056582 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/wandb-metadata.json wandb-metadata.json
+2024-11-22 18:13:50,705 INFO    SenderThread:1056582 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/requirements.txt requirements.txt
+2024-11-22 18:13:50,705 INFO    SenderThread:1056582 [dir_watcher.py:finish():402] scan save: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/wandb-summary.json wandb-summary.json
+2024-11-22 18:13:50,705 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 10
+2024-11-22 18:13:50,706 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: poll_exit
+2024-11-22 18:13:50,706 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:50,706 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 10
+2024-11-22 18:13:50,708 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:50,710 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 10
+2024-11-22 18:13:50,711 INFO    SenderThread:1056582 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-22 18:13:51,103 INFO    wandb-upload_1:1056582 [upload_job.py:push():130] Uploaded file /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/output.log
+2024-11-22 18:13:51,178 INFO    wandb-upload_0:1056582 [upload_job.py:push():130] Uploaded file /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/config.yaml
+2024-11-22 18:13:51,199 INFO    wandb-upload_3:1056582 [upload_job.py:push():130] Uploaded file /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/wandb-summary.json
+2024-11-22 18:13:51,205 INFO    wandb-upload_2:1056582 [upload_job.py:push():130] Uploaded file /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/files/requirements.txt
+2024-11-22 18:13:51,406 INFO    Thread-11 (_thread_body):1056582 [sender.py:transition_state():626] send defer: 11
+2024-11-22 18:13:51,406 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:51,406 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 11
+2024-11-22 18:13:51,407 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:51,407 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 11
+2024-11-22 18:13:51,407 INFO    SenderThread:1056582 [file_pusher.py:join():175] waiting for file pusher
+2024-11-22 18:13:51,408 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 12
+2024-11-22 18:13:51,408 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:51,408 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 12
+2024-11-22 18:13:51,409 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:51,409 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 12
+2024-11-22 18:13:51,409 INFO    SenderThread:1056582 [file_stream.py:finish():601] file stream finish called
+2024-11-22 18:13:51,510 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-22 18:13:51,908 INFO    SenderThread:1056582 [file_stream.py:finish():605] file stream finish is done
+2024-11-22 18:13:51,908 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 13
+2024-11-22 18:13:51,908 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: poll_exit
+2024-11-22 18:13:51,909 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:51,909 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 13
+2024-11-22 18:13:51,909 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:51,909 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 13
+2024-11-22 18:13:51,910 INFO    SenderThread:1056582 [sender.py:transition_state():626] send defer: 14
+2024-11-22 18:13:51,910 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: defer
+2024-11-22 18:13:51,910 INFO    HandlerThread:1056582 [handler.py:handle_request_defer():184] handle defer: 14
+2024-11-22 18:13:51,911 DEBUG   SenderThread:1056582 [sender.py:send():391] send: final
+2024-11-22 18:13:51,911 DEBUG   SenderThread:1056582 [sender.py:send():391] send: footer
+2024-11-22 18:13:51,911 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: defer
+2024-11-22 18:13:51,911 INFO    SenderThread:1056582 [sender.py:send_request_defer():622] handle sender defer: 14
+2024-11-22 18:13:51,912 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-22 18:13:51,912 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: poll_exit
+2024-11-22 18:13:51,913 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: server_info
+2024-11-22 18:13:51,913 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: server_info
+2024-11-22 18:13:51,916 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: poll_exit
+2024-11-22 18:13:51,916 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: get_summary
+2024-11-22 18:13:51,917 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: sampled_history
+2024-11-22 18:13:51,918 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: internal_messages
+2024-11-22 18:13:52,064 DEBUG   SenderThread:1056582 [sender.py:send_request():418] send_request: poll_exit
+2024-11-22 18:13:52,064 INFO    MainThread:1056582 [wandb_run.py:_footer_history_summary_info():4076] rendering history
+2024-11-22 18:13:52,065 INFO    MainThread:1056582 [wandb_run.py:_footer_history_summary_info():4108] rendering summary
+2024-11-22 18:13:52,065 INFO    MainThread:1056582 [wandb_run.py:_footer_sync_info():4035] logging synced files
+2024-11-22 18:13:52,066 DEBUG   HandlerThread:1056582 [handler.py:handle_request():158] handle_request: shutdown
+2024-11-22 18:13:52,066 INFO    HandlerThread:1056582 [handler.py:finish():880] shutting down handler
+2024-11-22 18:13:52,917 INFO    WriterThread:1056582 [datastore.py:close():296] close: /home/zeddo123/anom/RD4AD/wandb/run-20241122_181243-2tm3g62x/run-2tm3g62x.wandb
+2024-11-22 18:13:53,064 INFO    SenderThread:1056582 [sender.py:finish():1631] shutting down sender
+2024-11-22 18:13:53,065 INFO    SenderThread:1056582 [file_pusher.py:finish():169] shutting down file pusher
+2024-11-22 18:13:53,065 INFO    SenderThread:1056582 [file_pusher.py:join():175] waiting for file pusher

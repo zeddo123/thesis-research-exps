@@ -1,0 +1,1 @@
+{"columns": ["class", "fpr", "tpr"], "data": [["leather_normal", 0.0, 0.0], ["leather_normal", 0.0, 0.031], ["leather_normal", 0.0, 1.0], ["leather_normal", 1.0, 1.0], ["leather_defect", 0.0, 0.0], ["leather_defect", 0.0, 0.011], ["leather_defect", 0.0, 1.0], ["leather_defect", 1.0, 1.0]]}

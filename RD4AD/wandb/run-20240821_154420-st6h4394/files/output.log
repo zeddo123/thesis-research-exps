@@ -1,0 +1,247 @@
+
+Training T-S model on carpet
+epoch [1/150], loss:1.4222
+epoch [2/150], loss:0.8592
+epoch [3/150], loss:0.7429
+epoch [4/150], loss:0.6758
+epoch [5/150], loss:0.6246
+epoch [6/150], loss:0.5808
+epoch [7/150], loss:0.5456
+epoch [8/150], loss:0.5120
+epoch [9/150], loss:0.4903
+epoch [10/150], loss:0.4687
+Pixel Auroc:0.993, Sample Auroc0.999, Pixel Aupro0.977
+epoch [11/150], loss:0.4423
+epoch [12/150], loss:0.4267
+epoch [13/150], loss:0.4151
+epoch [14/150], loss:0.4019
+epoch [15/150], loss:0.3848
+epoch [16/150], loss:0.3669
+epoch [17/150], loss:0.3590
+epoch [18/150], loss:0.3539
+epoch [19/150], loss:0.3457
+epoch [20/150], loss:0.3402
+Pixel Auroc:0.993, Sample Auroc0.998, Pixel Aupro0.977
+epoch [21/150], loss:0.3372
+epoch [22/150], loss:0.3338
+epoch [23/150], loss:0.3313
+epoch [24/150], loss:0.3284
+epoch [25/150], loss:0.3267
+epoch [26/150], loss:0.3233
+epoch [27/150], loss:0.3197
+epoch [28/150], loss:0.3164
+epoch [29/150], loss:0.3138
+epoch [30/150], loss:0.3126
+Pixel Auroc:0.992, Sample Auroc0.998, Pixel Aupro0.976
+epoch [31/150], loss:0.3090
+epoch [32/150], loss:0.3081
+epoch [33/150], loss:0.3042
+epoch [34/150], loss:0.3014
+epoch [35/150], loss:0.2966
+epoch [36/150], loss:0.2943
+epoch [37/150], loss:0.2899
+epoch [38/150], loss:0.2869
+epoch [39/150], loss:0.2856
+epoch [40/150], loss:0.2861
+Pixel Auroc:0.991, Sample Auroc0.993, Pixel Aupro0.975
+epoch [41/150], loss:0.2800
+epoch [42/150], loss:0.2800
+epoch [43/150], loss:0.2794
+epoch [44/150], loss:0.2717
+epoch [45/150], loss:0.2699
+epoch [46/150], loss:0.2671
+epoch [47/150], loss:0.2638
+epoch [48/150], loss:0.2635
+epoch [49/150], loss:0.2593
+epoch [50/150], loss:0.2583
+Pixel Auroc:0.991, Sample Auroc0.994, Pixel Aupro0.974
+epoch [51/150], loss:0.2546
+epoch [52/150], loss:0.2539
+epoch [53/150], loss:0.2528
+epoch [54/150], loss:0.2498
+epoch [55/150], loss:0.2464
+epoch [56/150], loss:0.2482
+epoch [57/150], loss:0.2470
+epoch [58/150], loss:0.2436
+epoch [59/150], loss:0.2443
+epoch [60/150], loss:0.2412
+Pixel Auroc:0.991, Sample Auroc0.993, Pixel Aupro0.974
+epoch [61/150], loss:0.2366
+epoch [62/150], loss:0.2350
+epoch [63/150], loss:0.2356
+epoch [64/150], loss:0.2342
+epoch [65/150], loss:0.2340
+epoch [66/150], loss:0.2303
+epoch [67/150], loss:0.2334
+epoch [68/150], loss:0.2304
+epoch [69/150], loss:0.2278
+epoch [70/150], loss:0.2245
+Pixel Auroc:0.991, Sample Auroc0.994, Pixel Aupro0.975
+epoch [71/150], loss:0.2209
+epoch [72/150], loss:0.2210
+epoch [73/150], loss:0.2205
+epoch [74/150], loss:0.2201
+epoch [75/150], loss:0.2161
+epoch [76/150], loss:0.2160
+epoch [77/150], loss:0.2170
+epoch [78/150], loss:0.2143
+epoch [79/150], loss:0.2141
+epoch [80/150], loss:0.2148
+Pixel Auroc:0.991, Sample Auroc0.992, Pixel Aupro0.974
+epoch [81/150], loss:0.2113
+epoch [82/150], loss:0.2314
+epoch [83/150], loss:0.2262
+epoch [84/150], loss:0.2061
+epoch [85/150], loss:0.2050
+epoch [86/150], loss:0.2006
+epoch [87/150], loss:0.1990
+epoch [88/150], loss:0.1983
+epoch [89/150], loss:0.1945
+epoch [90/150], loss:0.1913
+Pixel Auroc:0.990, Sample Auroc0.991, Pixel Aupro0.972
+epoch [91/150], loss:0.1938
+epoch [92/150], loss:0.1930
+epoch [93/150], loss:0.1887
+epoch [94/150], loss:0.1874
+epoch [95/150], loss:0.1857
+epoch [96/150], loss:0.1856
+epoch [97/150], loss:0.1839
+epoch [98/150], loss:0.1827
+epoch [99/150], loss:0.1813
+epoch [100/150], loss:0.1833
+Pixel Auroc:0.990, Sample Auroc0.990, Pixel Aupro0.971
+epoch [101/150], loss:0.1823
+epoch [102/150], loss:0.1785
+epoch [103/150], loss:0.1785
+epoch [104/150], loss:0.1810
+epoch [105/150], loss:0.1782
+epoch [106/150], loss:0.1752
+epoch [107/150], loss:0.1771
+epoch [108/150], loss:0.1760
+epoch [109/150], loss:0.1740
+epoch [110/150], loss:0.1715
+Pixel Auroc:0.990, Sample Auroc0.989, Pixel Aupro0.971
+epoch [111/150], loss:0.1741
+epoch [112/150], loss:0.1720
+epoch [113/150], loss:0.1697
+epoch [114/150], loss:0.1680
+epoch [115/150], loss:0.1694
+epoch [116/150], loss:0.1673
+epoch [117/150], loss:0.1663
+epoch [118/150], loss:0.1671
+epoch [119/150], loss:0.1697
+epoch [120/150], loss:0.1672
+Pixel Auroc:0.990, Sample Auroc0.988, Pixel Aupro0.972
+epoch [121/150], loss:0.1646
+epoch [122/150], loss:0.1640
+epoch [123/150], loss:0.1641
+epoch [124/150], loss:0.1632
+epoch [125/150], loss:0.1640
+epoch [126/150], loss:0.1627
+epoch [127/150], loss:0.1624
+epoch [128/150], loss:0.1598
+epoch [129/150], loss:0.1593
+epoch [130/150], loss:0.1593
+Pixel Auroc:0.990, Sample Auroc0.988, Pixel Aupro0.972
+epoch [131/150], loss:0.1593
+epoch [132/150], loss:0.1578
+epoch [133/150], loss:0.1570
+epoch [134/150], loss:0.1557
+epoch [135/150], loss:0.1578
+epoch [136/150], loss:0.1581
+epoch [137/150], loss:0.1554
+epoch [138/150], loss:0.1557
+epoch [139/150], loss:0.1556
+epoch [140/150], loss:0.1537
+Pixel Auroc:0.990, Sample Auroc0.986, Pixel Aupro0.972
+epoch [141/150], loss:0.1525
+epoch [142/150], loss:0.1524
+epoch [143/150], loss:0.1533
+epoch [144/150], loss:0.1521
+epoch [145/150], loss:0.1515
+epoch [146/150], loss:0.1498
+epoch [147/150], loss:0.1489
+epoch [148/150], loss:0.1502
+epoch [149/150], loss:0.1489
+epoch [150/150], loss:0.1479
+Pixel Auroc:0.990, Sample Auroc0.988, Pixel Aupro0.972
+Training T-S model on bottle
+epoch [1/150], loss:1.5558
+epoch [2/150], loss:0.9208
+epoch [3/150], loss:0.6882
+epoch [4/150], loss:0.5658
+[34m[1mwandb[39m[22m: [33mWARNING[39m Step only supports monotonically increasing values, use define_metric to set a custom x axis. For details see: https://wandb.me/define-metric
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 0 is less than current step: 150. Dropping entry: {'bottle_loss': 1.5558455387751262, '_timestamp': 1724256469.292486}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 1 is less than current step: 150. Dropping entry: {'bottle_loss': 0.9208294053872427, '_timestamp': 1724256473.250815}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 2 is less than current step: 150. Dropping entry: {'bottle_loss': 0.6882186432679495, '_timestamp': 1724256477.1768143}).
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 3 is less than current step: 150. Dropping entry: {'bottle_loss': 0.5657884577910105, '_timestamp': 1724256481.140607}).
+epoch [5/150], loss:0.4906
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 4 is less than current step: 150. Dropping entry: {'bottle_loss': 0.49058230717976886, '_timestamp': 1724256485.069003}).
+epoch [6/150], loss:0.4159
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 5 is less than current step: 150. Dropping entry: {'bottle_loss': 0.4158592224121094, '_timestamp': 1724256489.0139127}).
+epoch [7/150], loss:0.3536
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 6 is less than current step: 150. Dropping entry: {'bottle_loss': 0.3536095966895421, '_timestamp': 1724256492.9676833}).
+epoch [8/150], loss:0.2957
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 7 is less than current step: 150. Dropping entry: {'bottle_loss': 0.295668621857961, '_timestamp': 1724256496.9182456}).
+epoch [9/150], loss:0.2790
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 8 is less than current step: 150. Dropping entry: {'bottle_loss': 0.2789681752522786, '_timestamp': 1724256500.8573494}).
+epoch [10/150], loss:0.2471
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 9 is less than current step: 150. Dropping entry: {'bottle_loss': 0.24705314884583154, '_timestamp': 1724256504.8209004}).
+Pixel Auroc:0.983, Sample Auroc0.993, Pixel Aupro0.957
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 9 is less than current step: 150. Dropping entry: {'bottle_pixel_auroc': 0.983, 'bottle_sample_auroc': 0.993, 'bottlepixel_aupro': 0.957, '_timestamp': 1724256514.7807624}).
+epoch [11/150], loss:0.2211
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 10 is less than current step: 150. Dropping entry: {'bottle_loss': 0.2211177498102188, '_timestamp': 1724256519.0154514}).
+epoch [12/150], loss:0.2155
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 11 is less than current step: 150. Dropping entry: {'bottle_loss': 0.21548262735207876, '_timestamp': 1724256522.9542387}).
+epoch [13/150], loss:0.1946
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 12 is less than current step: 150. Dropping entry: {'bottle_loss': 0.1945547436674436, '_timestamp': 1724256526.880254}).
+epoch [14/150], loss:0.1856
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 13 is less than current step: 150. Dropping entry: {'bottle_loss': 0.18556966880957285, '_timestamp': 1724256530.8163042}).
+epoch [15/150], loss:0.1782
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 14 is less than current step: 150. Dropping entry: {'bottle_loss': 0.17823139081398645, '_timestamp': 1724256534.7904027}).
+epoch [16/150], loss:0.1727
+[34m[1mwandb[39m[22m: [33mWARNING[39m (User provided step: 15 is less than current step: 150. Dropping entry: {'bottle_loss': 0.17274616658687592, '_timestamp': 1724256538.7310963}).
+Traceback (most recent call last):
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 110, in <module>
+    test(args, c)
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 68, in test
+    for imgs, _, labels, class_defect, gndtruth in train_loader:
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/zeddo123/anom/RD4AD/easy_dataset.py", line 128, in __getitem__
+    return self._prepare_item(index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/easy_dataset.py", line 113, in _prepare_item
+    img = self.transform(img)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+          ^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torchvision/transforms/transforms.py", line 354, in forward
+    return F.resize(img, self.size, self.interpolation, self.max_size, self.antialias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torchvision/transforms/functional.py", line 477, in resize
+    return F_pil.resize(img, size=output_size, interpolation=pil_interpolation)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torchvision/transforms/_functional_pil.py", line 250, in resize
+    return img.resize(tuple(size[::-1]), interpolation)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/PIL/Image.py", line 2164, in resize
+    self.load()
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/PIL/ImageFile.py", line 291, in load
+    n, err_code = decoder.decode(b)
+                  ^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

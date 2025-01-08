@@ -1,0 +1,37 @@
+
+Training T-S model on candle
+candle Training: 100%|██████████████████████████████████████████████████████| 2/2 [00:00<00:00,  5.54it/s]
+candle Training: 100%|██████████████████████████████████████████████████████| 2/2 [00:00<00:00, 14.89it/s]
+candle Training: 100%|██████████████████████████████████████████████████████| 2/2 [00:00<00:00, 15.39it/s]
+candle Training: 100%|██████████████████████████████████████████████████████| 2/2 [00:00<00:00, 15.44it/s]
+candle Training: 100%|██████████████████████████████████████████████████████| 2/2 [00:00<00:00, 15.41it/s]
+candle Training: 100%|██████████████████████████████████████████████████████| 2/2 [00:00<00:00, 15.42it/s]
+candle Training: 100%|██████████████████████████████████████████████████████| 2/2 [00:00<00:00, 15.42it/s]
+candle Training: 100%|██████████████████████████████████████████████████████| 2/2 [00:00<00:00, 15.41it/s]
+candle Training: 100%|██████████████████████████████████████████████████████| 2/2 [00:00<00:00, 15.41it/s]
+candle Training: 100%|██████████████████████████████████████████████████████| 2/2 [00:00<00:00, 15.42it/s]
+candle Training: 100%|██████████████████████████████████████████████████████| 2/2 [00:00<00:00, 15.46it/s]
+
+
+
+
+
+
+candle epochs:   9%|████▌                                              | 9/100 [00:15<02:33,  1.69s/epoch]
+Traceback (most recent call last):
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 123, in <module>
+    test(args, c)
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 89, in test
+    auroc_px, auroc_sp, aupro_px, table, roc, pr, _, _, _ = evaluation(encoder, bn, decoder, test_loader, device, _class_=_class_)
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/test.py", line 90, in evaluation
+    anomaly_map = gaussian_filter(anomaly_map, sigma=4)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/scipy/ndimage/_filters.py", line 385, in gaussian_filter
+    gaussian_filter1d(input, sigma, axis, order, output,
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/scipy/ndimage/_filters.py", line 283, in gaussian_filter1d
+    return correlate1d(input, weights, axis, output, mode, cval, 0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/scipy/ndimage/_filters.py", line 140, in correlate1d
+    _nd_image.correlate1d(input, weights, axis, output, mode, cval,
+KeyboardInterrupt

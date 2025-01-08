@@ -1,0 +1,19 @@
+
+Training T-S model on carpet
+epoch [1/150], loss:1.4221
+epoch [2/150], loss:0.8611
+epoch [3/150], loss:0.7376
+epoch [4/150], loss:0.6682
+epoch [5/150], loss:0.6155
+epoch [6/150], loss:0.5739
+epoch [7/150], loss:0.5407
+epoch [8/150], loss:0.5145
+epoch [9/150], loss:0.4910
+epoch [10/150], loss:0.4731
+Traceback (most recent call last):
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 108, in <module>
+    test(args, c)
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 82, in test
+    auroc_px, auroc_sp, aupro_px = evaluation(encoder, bn, decoder, test_loader, device, _class_=_class_)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: too many values to unpack (expected 3)

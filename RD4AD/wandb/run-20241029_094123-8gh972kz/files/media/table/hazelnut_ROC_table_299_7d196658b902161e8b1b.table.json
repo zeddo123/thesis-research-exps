@@ -1,0 +1,1 @@
+{"columns": ["class", "fpr", "tpr"], "data": [["hazelnut_normal", 0.0, 0.0], ["hazelnut_normal", 0.0, 0.025], ["hazelnut_normal", 0.0, 1.0], ["hazelnut_normal", 1.0, 1.0], ["hazelnut_defect", 0.0, 0.0], ["hazelnut_defect", 0.0, 0.014], ["hazelnut_defect", 0.0, 1.0], ["hazelnut_defect", 1.0, 1.0]]}

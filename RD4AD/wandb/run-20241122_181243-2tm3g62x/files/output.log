@@ -1,0 +1,54 @@
+
+Training T-S model on chest
+chest epochs:   0%|                                                              | 0/1 [00:00<?, ?epoch/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+chest epochs: 100%|██████████████████████████████████████████████████████| 1/1 [00:31<00:00, 31.14s/epoch]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+chest Testing: 100%|████████████████████████████████████████████████████| 500/500 [00:27<00:00, 18.40it/s]
+Traceback (most recent call last):
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 122, in <module>
+    test(args, c)
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 99, in test
+    auroc_px, auroc_sp, aupro_px, table, roc, pr, y_true, y_pred, y_image = evaluation(
+                                                                            ^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/test.py", line 130, in evaluation
+    auroc_sp = round(roc_auc_score(gt_list_sp, pr_list_sp), 3)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 640, in roc_auc_score
+    return _average_binary_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/sklearn/metrics/_base.py", line 76, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py", line 382, in _binary_roc_auc_score
+    raise ValueError(
+ValueError: Only one class present in y_true. ROC AUC score is not defined in that case.

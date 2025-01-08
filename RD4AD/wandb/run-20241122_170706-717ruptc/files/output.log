@@ -1,0 +1,185 @@
+
+Training T-S model on chest
+chest epochs:   0%|                                                              | 0/3 [00:00<?, ?epoch/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+chest epochs:  33%|█████████████████▋                                   | 1/3 [01:49<03:38, 109.14s/epoch]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+chest epochs:  67%|███████████████████████████████████▎                 | 2/3 [03:44<01:52, 112.55s/epoch]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+chest epochs: 100%|█████████████████████████████████████████████████████| 3/3 [05:22<00:00, 107.42s/epoch]
+
+
+
+
+
+
+
+chest Testing:  50%|██████████████████████████                          | 250/500 [00:17<00:17, 14.61it/s]
+Traceback (most recent call last):
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 122, in <module>
+    test(args, c)
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 99, in test
+    auroc_px, auroc_sp, aupro_px, table, roc, pr, y_true, y_pred, y_image = evaluation(
+                                                                            ^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/test.py", line 94, in evaluation
+    aupro_list.append(compute_pro(gt.squeeze(0).cpu().numpy().astype(int),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/test.py", line 373, in compute_pro
+    print(masks.flatte())
+          ^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'flatte'. Did you mean: 'flatten'?

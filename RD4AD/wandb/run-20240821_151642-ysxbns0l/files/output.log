@@ -1,0 +1,22 @@
+
+Training T-S model on carpet
+epoch [1/150], loss:1.4309
+epoch [2/150], loss:0.8660
+epoch [3/150], loss:0.7503
+epoch [4/150], loss:0.6844
+epoch [5/150], loss:0.6411
+epoch [6/150], loss:0.6058
+epoch [7/150], loss:0.5799
+epoch [8/150], loss:0.5456
+epoch [9/150], loss:0.5162
+epoch [10/150], loss:0.4876
+Traceback (most recent call last):
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 108, in <module>
+    test(args, c)
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 82, in test
+    auroc_px, auroc_sp, aupro_px = evaluation(encoder, bn, decoder, test_loader, device, _class_=_class_)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/test.py", line 102, in evaluation
+    y_image.append(wandb.Image(im.permute(1, 2, 0).cpu().numpy()))
+                   ^^^^^
+NameError: name 'wandb' is not defined

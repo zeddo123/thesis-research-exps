@@ -1,0 +1,1 @@
+{"columns": ["class", "fpr", "tpr"], "data": [["grid_normal", 0.0, 0.0], ["grid_normal", 0.0, 0.048], ["grid_normal", 0.0, 1.0], ["grid_normal", 1.0, 1.0], ["grid_defect", 0.0, 0.0], ["grid_defect", 0.0, 0.018], ["grid_defect", 0.0, 1.0], ["grid_defect", 1.0, 1.0]]}

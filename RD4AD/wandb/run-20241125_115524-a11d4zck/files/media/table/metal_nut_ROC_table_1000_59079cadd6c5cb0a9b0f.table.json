@@ -1,0 +1,1 @@
+{"columns": ["class", "fpr", "tpr"], "data": [["metal_nut_normal", 0.0, 0.0], ["metal_nut_normal", 0.0, 0.045], ["metal_nut_normal", 0.0, 1.0], ["metal_nut_normal", 1.0, 1.0], ["metal_nut_defect", 0.0, 0.0], ["metal_nut_defect", 0.0, 0.011], ["metal_nut_defect", 0.0, 1.0], ["metal_nut_defect", 1.0, 1.0]]}

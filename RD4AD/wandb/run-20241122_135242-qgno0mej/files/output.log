@@ -1,0 +1,99 @@
+
+Training T-S model on candle
+  0%|                                                                             | 0/100 [00:00<?, ?it/s]
+
+
+
+
+
+ 99%|████████████████████████████████████████████████████████████████████▏| 89/90 [00:11<00:00,  8.25it/s]
+  1%|▋                                                                    | 1/100 [00:11<19:04, 11.56s/it]
+
+
+
+
+ 89%|█████████████████████████████████████████████████████████████▎       | 80/90 [00:09<00:01,  8.10it/s]
+  2%|█▍                                                                   | 2/100 [00:22<18:25, 11.28s/it]
+
+
+
+
+
+ 97%|██████████████████████████████████████████████████████████████████▋  | 87/90 [00:10<00:00,  7.99it/s]
+  3%|██                                                                   | 3/100 [00:33<18:08, 11.22s/it]
+
+
+
+
+  4%|██▊                                                                  | 4/100 [00:45<18:12, 11.38s/it]
+  1%|▊                                                                     | 1/90 [00:00<00:11,  8.04it/s]
+
+
+
+
+
+ 91%|██████████████████████████████████████████████████████████████▊      | 82/90 [00:10<00:00,  8.37it/s]
+  5%|███▍                                                                 | 5/100 [00:56<17:53, 11.30s/it]
+
+
+
+
+
+ 97%|██████████████████████████████████████████████████████████████████▋  | 87/90 [00:10<00:00,  8.42it/s]
+  6%|████▏                                                                | 6/100 [01:07<17:40, 11.28s/it]
+
+
+
+
+  7%|████▊                                                                | 7/100 [01:18<17:22, 11.21s/it]
+  7%|████▋                                                                 | 6/90 [00:00<00:09,  8.42it/s]
+
+
+
+
+
+ 98%|███████████████████████████████████████████████████████████████████▍ | 88/90 [00:10<00:00,  8.23it/s]
+  8%|█████▌                                                               | 8/100 [01:29<17:03, 11.13s/it]
+
+
+
+
+  9%|██████▏                                                              | 9/100 [01:41<17:05, 11.27s/it]
+  1%|▊                                                                     | 1/90 [00:00<00:11,  8.00it/s]
+
+
+
+
+
+ 93%|████████████████████████████████████████████████████████████████▍    | 84/90 [00:10<00:00,  8.37it/s]
+100%|█████████████████████████████████████████████████████████████████████| 90/90 [00:10<00:00,  8.31it/s]
+  9%|██████▏                                                              | 9/100 [01:55<19:22, 12.78s/it]
+Traceback (most recent call last):
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 122, in <module>
+    test(args, c)
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 88, in test
+    auroc_px, auroc_sp, aupro_px, table, roc, pr = evaluation(encoder, bn, decoder, test_loader, device, _class_=_class_)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/test.py", line 85, in evaluation
+    for img, _, label, _, gt in tqdm(dataloader):
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 673, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+            ~~~~~~~~~~~~^^^^^
+  File "/home/zeddo123/anom/RD4AD/easy_dataset.py", line 133, in __getitem__
+    return self._prepare_item(index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/easy_dataset.py", line 121, in _prepare_item
+    gnd_truth = Image.open(grnd_truth_path).convert('1')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/venv/lib/python3.12/site-packages/PIL/Image.py", line 3247, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../InCTRL/visa_anomaly_detection/visa/candle/ground_truth/defect/072_mask.png'

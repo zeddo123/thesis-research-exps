@@ -1,0 +1,16 @@
+
+Training T-S model on candle
+epoch [1/150], loss:0.5755
+Traceback (most recent call last):
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 114, in <module>
+    test(args, c)
+  File "/home/zeddo123/anom/RD4AD/easy_train.py", line 85, in test
+    auroc_px, auroc_sp, aupro_px, table, roc, pr = evaluation(encoder, bn, decoder, test_loader, device, _class_=_class_)
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/test.py", line 93, in evaluation
+    aupro_list.append(compute_pro(gt.squeeze(0).cpu().numpy().astype(int),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zeddo123/anom/RD4AD/test.py", line 371, in compute_pro
+    assert amaps.shape == masks.shape, f"amaps.shape and masks.shape must be same {amaps.shape} {masks.shape}"
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: amaps.shape and masks.shape must be same (1, 256, 256) (3, 256, 256)
